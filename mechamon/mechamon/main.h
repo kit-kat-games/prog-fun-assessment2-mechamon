@@ -4,3 +4,6 @@
 #include "operator.h"
 #include "text_based_handler.h"
 #include "consts.h"
+#include "game_state.h"
+#include "gameplay_loop.h"
+#include "text_based_prepared_funcs.h"

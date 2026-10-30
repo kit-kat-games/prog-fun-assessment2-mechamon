@@ -1,11 +1,11 @@
 ﻿  main.cpp
-C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\mechamon\text_based_handler.h(50,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\frpex\source\repos\prog-fun-assessment2-totallydistinctpokemongame\prog-fun-assessment2-totallylegallydistinctpokemongame\prog-fun-assessment2-mechamon\mechamon\mechamon\text_based_handler.h(50,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\mechamon\text_based_handler.h(108,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\frpex\source\repos\prog-fun-assessment2-totallydistinctpokemongame\prog-fun-assessment2-totallylegallydistinctpokemongame\prog-fun-assessment2-mechamon\mechamon\mechamon\text_based_handler.h(108,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\mechamon\text_based_handler.h(153,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\frpex\source\repos\prog-fun-assessment2-totallydistinctpokemongame\prog-fun-assessment2-totallylegallydistinctpokemongame\prog-fun-assessment2-mechamon\mechamon\mechamon\text_based_handler.h(153,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-  mechamon.vcxproj -> C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\x64\Debug\mechamon.exe
+  mechamon.vcxproj -> C:\Users\frpex\source\repos\prog-fun-assessment2-totallydistinctpokemongame\prog-fun-assessment2-totallylegallydistinctpokemongame\prog-fun-assessment2-mechamon\mechamon\x64\Debug\mechamon.exe

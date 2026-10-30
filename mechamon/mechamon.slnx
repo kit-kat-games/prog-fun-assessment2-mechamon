@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="mechamon/mechamon.vcxproj" />
+  <Project Path="mechamon/mechamon.vcxproj" Id="dd1fa78e-6778-4886-82d5-5f7af23ac31f" />
 </Solution>

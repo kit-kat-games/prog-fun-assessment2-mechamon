@@ -7,7 +7,7 @@ struct GameState {
 public:
 	void setTurnStage(TurnStage newTurnStage) {
 		turnStage = newTurnStage;
-	}
+	} 
 	void setBattleStage(BattleStage newBattleStage) {
 		battleStage = newBattleStage;
 	}
@@ -17,11 +17,17 @@ public:
 	BattleStage readBattleStage() {
 		return battleStage;
 	}
+	void setPlayer(Operator* newPlayerPtr) {
+		playerPtr = newPlayerPtr;
+	}
+	void setOpponent(Operator* newOpponentPtr) {
+		opponentPtr = newOpponentPtr;
+	}
 	Operator* getPlayerPtr() {
-		return nullptr;
+		return playerPtr;
 	}
 	Operator* getOpponentPtr() {
-		return nullptr;
+		return opponentPtr;
 	}
 private:
 	TurnStage turnStage = tSTAGE_OUTOFBATTLE;
