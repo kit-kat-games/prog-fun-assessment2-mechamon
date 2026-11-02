@@ -379,13 +379,18 @@
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\um\\mcx.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\um\\imm.h",
             "c:\\program files (x86)\\windows kits\\10\\include\\10.0.26100.0\\um\\ime_cmodes.h",
+            "c:\\program files\\microsoft visual studio\\18\\insiders\\vc\\tools\\msvc\\14.52.37025\\include\\map",
+            "c:\\program files\\microsoft visual studio\\18\\insiders\\vc\\tools\\msvc\\14.52.37025\\include\\xtree",
+            "c:\\program files\\microsoft visual studio\\18\\insiders\\vc\\tools\\msvc\\14.52.37025\\include\\xnode_handle.h",
             "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.h",
             "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\operator.h",
             "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\consts.h",
-            "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_based_handler.h",
+            "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_output_handler.h",
             "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.h",
             "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\gameplay_loop.h",
-            "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_based_prepared_funcs.h"
+            "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\prepared_text_outputs.h",
+            "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_input_handler.h",
+            "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\ascii.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

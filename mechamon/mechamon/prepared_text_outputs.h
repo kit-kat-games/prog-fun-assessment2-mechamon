@@ -1,6 +1,6 @@
 #pragma once
 #include "generic_header.h"
-#include "text_based_handler.h"
+#include "text_output_handler.h"
 
 void printOpeningHeader() {
     printBorderLine();

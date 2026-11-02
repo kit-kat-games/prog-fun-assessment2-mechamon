@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\text_input_handler.obj",
+            "outputs": [
+                "x64\\Debug\\text_input_handler.h.obj.dt.module.json",
+                "x64\\Debug\\text_input_handler.h.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

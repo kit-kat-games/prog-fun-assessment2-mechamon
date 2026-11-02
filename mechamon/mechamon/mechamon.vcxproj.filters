@@ -35,13 +35,22 @@
     <ClInclude Include="consts.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="text_based_handler.h">
+    <ClInclude Include="text_output_handler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="gameplay_loop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="game_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="prepared_text_outputs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text_input_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ascii.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
