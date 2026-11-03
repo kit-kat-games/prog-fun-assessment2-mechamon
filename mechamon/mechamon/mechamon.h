@@ -1,6 +1,14 @@
 #pragma once
 #include "generic_header.h"
 
+struct MechamonConstructor {
+public:
+	MechamonConstructor(string _name) {
+		name = _name;
+	}
+	string name;
+};
+
 struct Mechamon {
 public:
 	void setName(string newName) {
@@ -16,14 +24,6 @@ private:
 	string name;
 };
 
-struct MechamonConstructor {
-public:
-	MechamonConstructor(string _name) {
-		name = _name;
-	}
-	string name;
-};
-
 map<string, MechamonConstructor> mechamonList = {
 	{ "Aerial", MechamonConstructor("Aerial") },
 	{ "Lfrith", MechamonConstructor("Lfrith") },
@@ -33,5 +33,5 @@ map<string, MechamonConstructor> mechamonList = {
 
 
 MechamonConstructor getConstructor(string mechamonName) {
-
+	return MechamonConstructor("fILLER");
 }
