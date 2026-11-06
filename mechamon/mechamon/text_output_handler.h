@@ -35,7 +35,7 @@ int resetTextColor() {
 	return curColor;
 }
 
-void printLeftBorder() {
+void _printLeftBorder() {
 	if (allowColoredBorder) {
 		cout << BORDER_CHAR << " ";
 	}
@@ -46,7 +46,7 @@ void printLeftBorder() {
 	}
 }
 
-void printRightBorder(string lineContents) {
+void _printRightBorder(string lineContents) {
 	int leftoverLine = IN_TERMINAL_WIDTH - lineContents.length() - 3;
 	if (allowColoredBorder) {
 		cout << string(leftoverLine, ' ');
@@ -60,7 +60,7 @@ void printRightBorder(string lineContents) {
 	}
 }
 
-vector<string> splitLongString(string str) {
+vector<string> _splitLongString(string str) {
 	vector<string> splitStrLines = {};
 	string currentLine = "";
 	string currentWord = "";
@@ -90,13 +90,13 @@ vector<string> splitLongString(string str) {
 
 void print(string str) {
 	if (str.length() <= LINE_LENGTH_LIMIT) {
-		printLeftBorder();
+		_printLeftBorder();
 		cout << str;
-		printRightBorder(str);
+		_printRightBorder(str);
 		cout << endl;
 	}
 	else {
-		vector<string> splitStrLines = splitLongString(str);
+		vector<string> splitStrLines = _splitLongString(str);
 		for (string s : splitStrLines) {
 			print(s);
 		}
@@ -107,13 +107,13 @@ void printCentered(string str) {
 	if (str.length() <= LINE_LENGTH_LIMIT) {
 		int offset = ((IN_TERMINAL_WIDTH - str.length()) / 2) - 2;
 		string strOuput = string(offset, ' ') + str;
-		printLeftBorder();
+		_printLeftBorder();
 		cout << strOuput;
-		printRightBorder(strOuput);
+		_printRightBorder(strOuput);
 		cout << endl;
 	}
 	else {
-		vector<string> splitStrLines = splitLongString(str);
+		vector<string> splitStrLines = _splitLongString(str);
 		for (string s : splitStrLines) {
 			printCentered(s);
 		}
@@ -125,23 +125,23 @@ void printBorderLine() {
 }
 
 void printEmptyLine() {
-	printLeftBorder();
-	printRightBorder("");
+	_printLeftBorder();
+	_printRightBorder("");
 	cout << endl;
 }
 
 void printTyping(string str) {
 	if (str.length() <= LINE_LENGTH_LIMIT) {
-		printLeftBorder();
+		_printLeftBorder();
 		for (char c : str) {
 			cout << c;
 			this_thread::sleep_for(chrono::milliseconds(TYPING_INTERVAL));
 		}
-		printRightBorder(str);
+		_printRightBorder(str);
 		cout << endl;
 	}
 	else {
-		vector<string> splitStrLines = splitLongString(str);
+		vector<string> splitStrLines = _splitLongString(str);
 		for (string s : splitStrLines) {
 			printTyping(s);
 		}
@@ -152,17 +152,17 @@ void printCenteredTyping(string str) {
 	if (str.length() <= LINE_LENGTH_LIMIT) {
 		int offset = ((IN_TERMINAL_WIDTH - str.length()) / 2) - 2;
 		string strOuput = string(offset, ' ') + str;
-		printLeftBorder();
+		_printLeftBorder();
 		cout << string(offset, ' ');
 		for (char c : str) {
 			cout << c;
 			this_thread::sleep_for(chrono::milliseconds(TYPING_INTERVAL));
 		}
-		printRightBorder(strOuput);
+		_printRightBorder(strOuput);
 		cout << endl;
 	}
 	else {
-		vector<string> splitStrLines = splitLongString(str);
+		vector<string> splitStrLines = _splitLongString(str);
 		for (string s : splitStrLines) {
 			printCenteredTyping(s);
 		}

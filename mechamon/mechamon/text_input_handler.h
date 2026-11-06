@@ -1,21 +1,22 @@
 #pragma once
 #include "generic_header.h"
 #include "text_output_handler.h"
+#include "template_funcs.h"
 
-void printInputField(string inputRequest = "") {
-	printLeftBorder();
+void _printInputField(string inputRequest = "") {
+	_printLeftBorder();
 	cout << inputRequest;
 }
 
-string getLineStringInput(string inputRequest = "", bool mustHaveCharacters = true, bool mustHaveAlpha = false) {
+string _getLineStringInput(string inputRequest = "", bool mustHaveCharacters = true, bool mustHaveAlpha = false) {
 	while (true) {
 		string input;
 		getline(cin, input);
 		if (cin.fail()) {
-			cerr << "ERROR: That is not a string." << endl;
+			print("ERROR: That is not a string.");
 		}
 		else if (input == "") {
-			cerr << "ERROR: That is an empty string, please give an input with characters." << endl;
+			print("ERROR: That is an empty string, please give an input with characters.");
 		}
 		else {
 			bool valid = true;
@@ -27,7 +28,7 @@ string getLineStringInput(string inputRequest = "", bool mustHaveCharacters = tr
 					}
 				}
 				if (noAlpha) {
-					cerr << "ERROR: There are no letters in that input, please give an input with letters." << endl;
+					print("ERROR: There are no letters in that input, please give an input with letters.");
 					valid = false;
 				}
 			}
@@ -39,7 +40,7 @@ string getLineStringInput(string inputRequest = "", bool mustHaveCharacters = tr
 					}
 				}
 				if (noCharacters) {
-					cerr << "ERROR: There are no characters in that input, please give an input with characters." << endl;
+					print("ERROR: There are no characters in that input, please give an input with characters.");
 					valid = false;
 				}
 			}
@@ -48,15 +49,53 @@ string getLineStringInput(string inputRequest = "", bool mustHaveCharacters = tr
 			}
 		}
 
-		printInputField(inputRequest);
+		_printInputField(inputRequest);
 	}
 }
 
 string getUserStringInput(string inputRequest = "", bool mustHaveCharacters = true, bool mustHaveAlpha = false) {
-	printInputField(inputRequest);
-	string input = getLineStringInput(inputRequest, mustHaveCharacters, mustHaveAlpha);
+	_printInputField(inputRequest);
+	string input = _getLineStringInput(inputRequest, mustHaveCharacters, mustHaveAlpha);
 	string lineContents = input + inputRequest;
 	// Currently - Work out how to stop getline putting you on next line
 	//printRightBorder(lineContents);
 	return input;
+}
+
+string getUserMultipleChoiceInput(vector<string> options, string inputRequest = "", bool caseMatters = false) {
+	string result = "";
+	if (!caseMatters) {
+		vector<string> temp = options;
+		options.clear();
+		for (string s : temp) {
+			string option = "";
+			for (char c : s) {
+				option += tolower(c);
+			}
+			options.push_back(option);
+		}
+	}
+
+	if (inputRequest != "") {
+		print(inputRequest);
+	}
+	while (true) {
+		string input = getUserStringInput("Please enter your choice of option: ");
+		string casedInput = input;
+		if (!caseMatters) {
+			string temp = input;
+			casedInput = "";
+			for (char c : temp) {
+				casedInput += tolower(c);
+			}
+		}
+		if (isWithin(casedInput, options)) {
+			result = input;
+			break;
+		}
+		else {
+			print("ERROR: That is not a valid choice. Please choose again.");
+		}
+	}
+	return result;
 }

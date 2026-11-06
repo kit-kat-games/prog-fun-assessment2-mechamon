@@ -5,7 +5,6 @@
 #include "text_output_handler.h"
 #include "consts.h"
 #include "game_state.h"
-#include "gameplay_loop.h"
 #include "prepared_text_outputs.h"
 #include "text_input_handler.h"
 #include "ascii.h"

@@ -1,11 +1,67 @@
 ﻿  main.cpp
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(50,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(50,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(108,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(108,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(153,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(153,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-  mechamon.vcxproj -> C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\x64\Debug\mechamon.exe
+C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\utility(536,17): error C2512: 'MechamonConstructor::MechamonConstructor': no appropriate default constructor available
+  (compiling source file 'main.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\utility(536,17):
+      while trying to match the argument list '()'
+      C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\utility(536,17):
+      the template instantiation context (the oldest one first) is
+          C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\mechamon\mechamon.h(27,34):
+          see reference to class template instantiation 'std::map<std::string,MechamonConstructor,std::less<std::string>,std::allocator<std::pair<const std::string,MechamonConstructor>>>' being compiled
+          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\map(345,18):
+          while compiling class template member function 'MechamonConstructor &std::map<std::string,MechamonConstructor,std::less<std::string>,std::allocator<std::pair<const std::string,MechamonConstructor>>>::operator [](const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)'
+              C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\mechamon\mechamon.h(35,3):
+              see the first reference to 'std::map<std::string,MechamonConstructor,std::less<std::string>,std::allocator<std::pair<const std::string,MechamonConstructor>>>::operator []' in 'getConstructor'
+          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\map(346,16):
+          see reference to function template instantiation 'std::pair<std::_Tree_node<std::pair<const std::string,MechamonConstructor>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,bool> std::map<std::string,MechamonConstructor,std::less<std::string>,_Alloc>::_Try_emplace<const std::basic_string<char,std::char_traits<char>,std::allocator<char>>&,>(_Keyty)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,MechamonConstructor>>,
+              _Keyty=const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &
+          ]
+          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\map(205,56):
+          see reference to function template instantiation 'std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<const std::string,MechamonConstructor>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>::_Tree_temp_node<const std::piecewise_construct_t&,std::tuple<const _Ty &>,std::tuple<>>(_Alnode &,std::_Tree_node<std::pair<const std::string,MechamonConstructor>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,const std::piecewise_construct_t &,std::tuple<const _Ty &> &&,std::tuple<> &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,MechamonConstructor>>,
+              _Ty=std::string,
+              _Alnode=std::allocator<std::_Tree_node<std::pair<const std::string,MechamonConstructor>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,MechamonConstructor>>>::void_pointer>>
+          ]
+          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\xtree(841,25):
+          see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const std::piecewise_construct_t&,std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &>,std::tuple<>>(_Alloc &,_Objty *const ,const std::piecewise_construct_t &,std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &> &&,std::tuple<> &&)' being compiled
+          with
+          [
+              _Alloc=std::allocator<std::_Tree_node<std::pair<const std::string,MechamonConstructor>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,MechamonConstructor>>>::void_pointer>>,
+              _Ty=std::pair<const std::string,MechamonConstructor>,
+              _Objty=std::pair<const std::string,MechamonConstructor>
+          ]
+          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\xmemory(730,14):
+          see reference to function template instantiation '_Ty *std::construct_at<_Objty,const std::piecewise_construct_t&,std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &>,std::tuple<>>(_Ty *const ,const std::piecewise_construct_t &,std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &> &&,std::tuple<> &&) noexcept(false)' being compiled
+          with
+          [
+              _Ty=std::pair<const std::string,MechamonConstructor>,
+              _Objty=std::pair<const std::string,MechamonConstructor>
+          ]
+          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\xutility(647,73):
+          see reference to function template instantiation 'std::pair<const std::string,MechamonConstructor>::pair<const _Ty&,>(std::piecewise_construct_t,std::tuple<const _Ty &>,std::tuple<>)' being compiled
+          with
+          [
+              _Ty=std::string
+          ]
+          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\utility(388,15):
+          see reference to function template instantiation 'std::pair<const std::string,MechamonConstructor>::pair<std::tuple<const _Ty &>,std::tuple<>,0,>(_Tuple1 &,_Tuple2 &,std::integer_sequence<size_t,0>,std::integer_sequence<size_t>)' being compiled
+          with
+          [
+              _Ty=std::string,
+              _Tuple1=std::tuple<const std::string &>,
+              _Tuple2=std::tuple<>
+          ]
+  

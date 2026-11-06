@@ -24,14 +24,23 @@ private:
 	string name;
 };
 
-map<string, MechamonConstructor> mechamonList = {
-	{ "Aerial", MechamonConstructor("Aerial") },
-	{ "Lfrith", MechamonConstructor("Lfrith") },
-	{ "Pharact", MechamonConstructor("Pharact")}
+map<string, MechamonConstructor> _mechamonConstructorList = {
+	{ "mech1", MechamonConstructor("mech1") },
+	{ "mech2", MechamonConstructor("mech2") },
+	{ "mech3", MechamonConstructor("mech3") }
 };
 
-
-
 MechamonConstructor getConstructor(string mechamonName) {
-	return MechamonConstructor("fILLER");
+	if (_mechamonConstructorList.contains(mechamonName)) {
+		return _mechamonConstructorList[mechamonName];
+	}
+	return MechamonConstructor("FILLER");
+}
+
+vector<string> getPossibleMechamons() {
+	vector<string> result = {};
+	for (pair<string, MechamonConstructor> p : _mechamonConstructorList) {
+		result.push_back(p.first);
+	}
+	return result;
 }

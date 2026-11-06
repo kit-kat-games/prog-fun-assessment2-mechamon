@@ -1,7 +1,23 @@
 #pragma once
 #include "generic_header.h"
-#include "gameplay_loop.h"
 #include "operator.h"
+
+enum TurnStage {
+	tSTAGE_TURNSTART,
+	tSTAGE_MOVESELECTION,
+	tSTAGE_ORDERCALC,
+	tSTAGE_MOVEPROCESS,
+	tSTAGE_TURNEND,
+	tSTAGE_OUTOFBATTLE,
+};
+
+enum BattleStage {
+	bSTAGE_BATTLESETUP,
+	bSTAGE_INBATTLE,
+	bSTAGE_BATTLERESULT,
+	bSTAGE_FINDINGBATTLE,
+	bSTAGE_GAMESETUP,
+};
 
 struct GameState {
 public:
@@ -17,21 +33,27 @@ public:
 	BattleStage readBattleStage() {
 		return battleStage;
 	}
-	void setPlayer(Operator* newPlayerPtr) {
-		playerPtr = newPlayerPtr;
+	void setPlayer(Operator newPlayer) {
+		player = newPlayer;
 	}
-	void setOpponent(Operator* newOpponentPtr) {
-		opponentPtr = newOpponentPtr;
+	void setOpponent(Operator newOpponent) {
+		opponent = newOpponent;
 	}
 	Operator* getPlayerPtr() {
-		return playerPtr;
+		return &player;
 	}
 	Operator* getOpponentPtr() {
-		return opponentPtr;
+		return &opponent;
+	}
+	string readPlayerMechamonName() {
+		return player.getCurrentMechamonPtr()->readName();
+	}
+	string readOpponentMechamonName() {
+		return opponent.getCurrentMechamonPtr()->readName();
 	}
 private:
 	TurnStage turnStage = tSTAGE_OUTOFBATTLE;
 	BattleStage battleStage = bSTAGE_GAMESETUP;
-	Operator* playerPtr = nullptr;
-	Operator* opponentPtr = nullptr;
+	Operator player = Operator("NOTSETUP");
+	Operator opponent = Operator("NOTSETUP");
 };

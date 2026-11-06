@@ -2,6 +2,7 @@
 #include "generic_header.h"
 #include "mechamon.h"
 #include "consts.h"
+#include "text_output_handler.h"
 
 struct Operator {
 public:
@@ -32,5 +33,4 @@ private:
 	string name;
 	vector<Mechamon> mechamonList = {};
 	Mechamon* currentMechamonPtr = nullptr;
-	vector<Mechamon>* mechamonListPtr = &mechamonList;
 };

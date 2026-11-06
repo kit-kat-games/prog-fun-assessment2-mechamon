@@ -24,12 +24,12 @@
   <ItemGroup>
     <ClInclude Include="ascii.h" />
     <ClInclude Include="consts.h" />
-    <ClInclude Include="gameplay_loop.h" />
     <ClInclude Include="game_state.h" />
     <ClInclude Include="generic_header.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="mechamon.h" />
     <ClInclude Include="operator.h" />
+    <ClInclude Include="template_funcs.h" />
     <ClInclude Include="text_output_handler.h" />
     <ClInclude Include="prepared_text_outputs.h" />
     <ClInclude Include="text_input_handler.h" />
