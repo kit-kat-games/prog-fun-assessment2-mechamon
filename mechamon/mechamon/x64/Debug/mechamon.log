@@ -1,67 +1,110 @@
 ﻿  main.cpp
-C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(50,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\frpex\source\repos\prog-fun-assessment2-totallydistinctpokemongame\prog-fun-assessment2-totallylegallydistinctpokemongame\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(50,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(108,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\frpex\source\repos\prog-fun-assessment2-totallydistinctpokemongame\prog-fun-assessment2-totallylegallydistinctpokemongame\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(112,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(153,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\frpex\source\repos\prog-fun-assessment2-totallydistinctpokemongame\prog-fun-assessment2-totallylegallydistinctpokemongame\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(157,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\utility(536,17): error C2512: 'MechamonConstructor::MechamonConstructor': no appropriate default constructor available
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13): error C2665: 'std::swap': no overloaded function could convert all the argument types
   (compiling source file 'main.cpp')
-      C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\utility(536,17):
-      while trying to match the argument list '()'
-      C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\utility(536,17):
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\thread(263,25):
+      could be 'void std::swap(std::thread &,std::thread &) noexcept'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::thread &,std::thread &) noexcept': cannot convert argument 1 from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>' to 'std::thread &'
+              C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,18):
+              A non-const reference may only be bound to an lvalue
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\xstring(3303,19):
+      or       'void std::swap<char,std::char_traits<char>,std::allocator<char>>(std::basic_string<char,std::char_traits<char>,std::allocator<char>> &,std::basic_string<char,std::char_traits<char>,std::allocator<char>> &) noexcept'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap<char,std::char_traits<char>,std::allocator<char>>(std::basic_string<char,std::char_traits<char>,std::allocator<char>> &,std::basic_string<char,std::char_traits<char>,std::allocator<char>> &) noexcept': cannot convert argument 1 from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>' to 'std::basic_string<char,std::char_traits<char>,std::allocator<char>> &'
+              C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,18):
+              Conversion loses qualifiers
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\map(676,6):
+      or       'void std::swap(std::multimap<_Kty,_Ty,_Pr,_Alloc> &,std::multimap<_Kty,_Ty,_Pr,_Alloc> &) noexcept(<expr>)'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::multimap<_Kty,_Ty,_Pr,_Alloc> &,std::multimap<_Kty,_Ty,_Pr,_Alloc> &) noexcept(<expr>)': could not deduce template argument for 'std::multimap<_Kty,_Ty,_Pr,_Alloc> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\map(440,6):
+      or       'void std::swap(std::map<_Kty,_Ty,_Pr,_Alloc> &,std::map<_Kty,_Ty,_Pr,_Alloc> &) noexcept(<expr>)'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::map<_Kty,_Ty,_Pr,_Alloc> &,std::map<_Kty,_Ty,_Pr,_Alloc> &) noexcept(<expr>)': could not deduce template argument for 'std::map<_Kty,_Ty,_Pr,_Alloc> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\sstream(969,6):
+      or       'void std::swap(std::basic_stringstream<_Elem,_Traits,_Alloc> &,std::basic_stringstream<_Elem,_Traits,_Alloc> &) noexcept'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::basic_stringstream<_Elem,_Traits,_Alloc> &,std::basic_stringstream<_Elem,_Traits,_Alloc> &) noexcept': could not deduce template argument for 'std::basic_stringstream<_Elem,_Traits,_Alloc> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\sstream(844,6):
+      or       'void std::swap(std::basic_ostringstream<_Elem,_Traits,_Alloc> &,std::basic_ostringstream<_Elem,_Traits,_Alloc> &) noexcept'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::basic_ostringstream<_Elem,_Traits,_Alloc> &,std::basic_ostringstream<_Elem,_Traits,_Alloc> &) noexcept': could not deduce template argument for 'std::basic_ostringstream<_Elem,_Traits,_Alloc> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\sstream(725,6):
+      or       'void std::swap(std::basic_istringstream<_Elem,_Traits,_Alloc> &,std::basic_istringstream<_Elem,_Traits,_Alloc> &) noexcept'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::basic_istringstream<_Elem,_Traits,_Alloc> &,std::basic_istringstream<_Elem,_Traits,_Alloc> &) noexcept': could not deduce template argument for 'std::basic_istringstream<_Elem,_Traits,_Alloc> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\sstream(606,6):
+      or       'void std::swap(std::basic_stringbuf<_Elem,_Traits,_Alloc> &,std::basic_stringbuf<_Elem,_Traits,_Alloc> &) noexcept'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::basic_stringbuf<_Elem,_Traits,_Alloc> &,std::basic_stringbuf<_Elem,_Traits,_Alloc> &) noexcept': could not deduce template argument for 'std::basic_stringbuf<_Elem,_Traits,_Alloc> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\optional(1036,19):
+      or       'void std::swap(std::optional<_Ty> &,std::optional<_Ty> &) noexcept(<expr>)'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::optional<_Ty> &,std::optional<_Ty> &) noexcept(<expr>)': could not deduce template argument for 'std::optional<_Ty> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\forward_list(1583,6):
+      or       'void std::swap(std::forward_list<_Ty,_Alloc> &,std::forward_list<_Ty,_Alloc> &) noexcept'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::forward_list<_Ty,_Alloc> &,std::forward_list<_Ty,_Alloc> &) noexcept': could not deduce template argument for 'std::forward_list<_Ty,_Alloc> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\vector(2406,19):
+      or       'void std::swap(std::vector<_Ty,_Alloc> &,std::vector<_Ty,_Alloc> &) noexcept'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::vector<_Ty,_Alloc> &,std::vector<_Ty,_Alloc> &) noexcept': could not deduce template argument for 'std::vector<_Ty,_Alloc> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\memory(3701,19):
+      or       'void std::swap(std::unique_ptr<_Ty,_Dx> &,std::unique_ptr<_Ty,_Dx> &) noexcept'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::unique_ptr<_Ty,_Dx> &,std::unique_ptr<_Ty,_Dx> &) noexcept': could not deduce template argument for 'std::unique_ptr<_Ty,_Dx> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\memory(3284,6):
+      or       'void std::swap(std::weak_ptr<_Ty> &,std::weak_ptr<_Ty> &) noexcept'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::weak_ptr<_Ty> &,std::weak_ptr<_Ty> &) noexcept': could not deduce template argument for 'std::weak_ptr<_Ty> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\memory(2021,6):
+      or       'void std::swap(std::shared_ptr<_Ty> &,std::shared_ptr<_Ty> &) noexcept'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::shared_ptr<_Ty> &,std::shared_ptr<_Ty> &) noexcept': could not deduce template argument for 'std::shared_ptr<_Ty> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\tuple(1020,19):
+      or       'void std::swap(std::tuple<_Types...> &,std::tuple<_Types...> &) noexcept(<expr>)'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::tuple<_Types...> &,std::tuple<_Types...> &) noexcept(<expr>)': could not deduce template argument for 'std::tuple<_Types...> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\utility(534,19):
+      or       'void std::swap(std::pair<_Ty1,_Ty2> &,std::pair<_Ty1,_Ty2> &) noexcept(<expr>)'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(std::pair<_Ty1,_Ty2> &,std::pair<_Ty1,_Ty2> &) noexcept(<expr>)': could not deduce template argument for 'std::pair<_Ty1,_Ty2> &' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\type_traits(2217,19):
+      or       'void std::swap(_Ty (&)[_Size],_Ty (&)[_Size]) noexcept(<expr>)'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(_Ty (&)[_Size],_Ty (&)[_Size]) noexcept(<expr>)': could not deduce template argument for '_Ty (&)[_Size]' from 'const std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\type_traits(2214,19):
+      or       'void std::swap(_Ty &,_Ty &) noexcept(<expr>)'
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+          'void std::swap(_Ty &,_Ty &) noexcept(<expr>)': could not deduce template argument for '__formal'
+              C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\type_traits(2210,34):
+              'std::enable_if_t<false,int>' : Failed to specialize alias template
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
+      while trying to match the argument list '(const std::basic_string<char,std::char_traits<char>,std::allocator<char>>, const std::basic_string<char,std::char_traits<char>,std::allocator<char>>)'
+      C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6522,13):
       the template instantiation context (the oldest one first) is
-          C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\mechamon\mechamon.h(27,34):
-          see reference to class template instantiation 'std::map<std::string,MechamonConstructor,std::less<std::string>,std::allocator<std::pair<const std::string,MechamonConstructor>>>' being compiled
-          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\map(345,18):
-          while compiling class template member function 'MechamonConstructor &std::map<std::string,MechamonConstructor,std::less<std::string>,std::allocator<std::pair<const std::string,MechamonConstructor>>>::operator [](const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)'
-              C:\Users\p016525q\Documents\GitHub\prog-fun-assessment2-mechamon\mechamon\mechamon\mechamon.h(35,3):
-              see the first reference to 'std::map<std::string,MechamonConstructor,std::less<std::string>,std::allocator<std::pair<const std::string,MechamonConstructor>>>::operator []' in 'getConstructor'
-          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\map(346,16):
-          see reference to function template instantiation 'std::pair<std::_Tree_node<std::pair<const std::string,MechamonConstructor>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,bool> std::map<std::string,MechamonConstructor,std::less<std::string>,_Alloc>::_Try_emplace<const std::basic_string<char,std::char_traits<char>,std::allocator<char>>&,>(_Keyty)' being compiled
-          with
-          [
-              _Alloc=std::allocator<std::pair<const std::string,MechamonConstructor>>,
-              _Keyty=const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &
-          ]
-          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\map(205,56):
-          see reference to function template instantiation 'std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<const std::string,MechamonConstructor>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>::_Tree_temp_node<const std::piecewise_construct_t&,std::tuple<const _Ty &>,std::tuple<>>(_Alnode &,std::_Tree_node<std::pair<const std::string,MechamonConstructor>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,const std::piecewise_construct_t &,std::tuple<const _Ty &> &&,std::tuple<> &&)' being compiled
-          with
-          [
-              _Alloc=std::allocator<std::pair<const std::string,MechamonConstructor>>,
-              _Ty=std::string,
-              _Alnode=std::allocator<std::_Tree_node<std::pair<const std::string,MechamonConstructor>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,MechamonConstructor>>>::void_pointer>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\xtree(841,25):
-          see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const std::piecewise_construct_t&,std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &>,std::tuple<>>(_Alloc &,_Objty *const ,const std::piecewise_construct_t &,std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &> &&,std::tuple<> &&)' being compiled
-          with
-          [
-              _Alloc=std::allocator<std::_Tree_node<std::pair<const std::string,MechamonConstructor>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,MechamonConstructor>>>::void_pointer>>,
-              _Ty=std::pair<const std::string,MechamonConstructor>,
-              _Objty=std::pair<const std::string,MechamonConstructor>
-          ]
-          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\xmemory(730,14):
-          see reference to function template instantiation '_Ty *std::construct_at<_Objty,const std::piecewise_construct_t&,std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &>,std::tuple<>>(_Ty *const ,const std::piecewise_construct_t &,std::tuple<const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &> &&,std::tuple<> &&) noexcept(false)' being compiled
-          with
-          [
-              _Ty=std::pair<const std::string,MechamonConstructor>,
-              _Objty=std::pair<const std::string,MechamonConstructor>
-          ]
-          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\xutility(647,73):
-          see reference to function template instantiation 'std::pair<const std::string,MechamonConstructor>::pair<const _Ty&,>(std::piecewise_construct_t,std::tuple<const _Ty &>,std::tuple<>)' being compiled
-          with
-          [
-              _Ty=std::string
-          ]
-          C:\Program Files\Microsoft Visual Studio\18\Professional\VC\Tools\MSVC\14.51.36231\include\utility(388,15):
-          see reference to function template instantiation 'std::pair<const std::string,MechamonConstructor>::pair<std::tuple<const _Ty &>,std::tuple<>,0,>(_Tuple1 &,_Tuple2 &,std::integer_sequence<size_t,0>,std::integer_sequence<size_t>)' being compiled
+          C:\Users\frpex\source\repos\prog-fun-assessment2-totallydistinctpokemongame\prog-fun-assessment2-totallylegallydistinctpokemongame\prog-fun-assessment2-mechamon\mechamon\mechamon\main.cpp(58,5):
+          see reference to function template instantiation or specialization 'void std::shuffle<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,std::mt19937&>(_RanIt,_RanIt,_Urng)' being compiled
           with
           [
               _Ty=std::string,
-              _Tuple1=std::tuple<const std::string &>,
-              _Tuple2=std::tuple<>
+              _RanIt=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<std::string>>>,
+              _Urng=std::mt19937 &
+          ]
+          C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.52.37025\include\algorithm(6531,10):
+          see reference to function template instantiation or specialization 'void std::_Random_shuffle1<_RanIt,std::_Rng_from_urng_v2<__int64,std::shuffle::_Urng0>>(_RanIt,_RanIt,_RngFn &)' being compiled
+          with
+          [
+              _RanIt=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<std::string>>>,
+              _RngFn=std::_Rng_from_urng_v2<__int64,std::shuffle::_Urng0>
           ]
   

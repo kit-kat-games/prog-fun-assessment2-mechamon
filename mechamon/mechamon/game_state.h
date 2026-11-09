@@ -45,11 +45,11 @@ public:
 	Operator* getOpponentPtr() {
 		return &opponent;
 	}
-	string readPlayerMechamonName() {
-		return player.getCurrentMechamonPtr()->readName();
+	string readPlayerName() {
+		return player.readName();
 	}
-	string readOpponentMechamonName() {
-		return opponent.getCurrentMechamonPtr()->readName();
+	string readOpponentName() {
+		return opponent.readName();
 	}
 private:
 	TurnStage turnStage = tSTAGE_OUTOFBATTLE;
@@ -57,3 +57,12 @@ private:
 	Operator player = Operator("NOTSETUP");
 	Operator opponent = Operator("NOTSETUP");
 };
+
+
+string readCurMechamonName(Operator oper) {
+	return oper.getCurrentMechamonPtr()->readName();
+}
+
+string readCurMechamonType(Operator oper) {
+	return oper.getCurrentMechamonPtr()->readType();
+}

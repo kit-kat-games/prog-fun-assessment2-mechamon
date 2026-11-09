@@ -1,12 +1,15 @@
 #pragma once
 #include "generic_header.h"
+#include "misc_funcs.h"
 
 struct MechamonConstructor {
 public:
-	MechamonConstructor(string _name) {
+	string type;
+	string name;
+	MechamonConstructor(string _type, string _name = "") {
+		type = _type;
 		name = _name;
 	}
-	string name;
 };
 
 struct Mechamon {
@@ -17,30 +20,31 @@ public:
 	string readName() {
 		return name;
 	}
+	string readType() {
+		return type;
+	}
 	Mechamon(MechamonConstructor constructor) {
 		name = constructor.name;
+		type = constructor.type;
 	}
 private:
 	string name;
+	string type;
 };
 
-map<string, MechamonConstructor> _mechamonConstructorList = {
-	{ "mech1", MechamonConstructor("mech1") },
-	{ "mech2", MechamonConstructor("mech2") },
-	{ "mech3", MechamonConstructor("mech3") }
-};
+vector<string> _mechamonTypesList = { "mech1", "mech2", "mech3", "mech4", "mech5", "mech6", "mech7", "mech8", "mech9", "mech10", "mech11", "mech12" };
 
-MechamonConstructor getConstructor(string mechamonName) {
-	if (_mechamonConstructorList.contains(mechamonName)) {
-		return _mechamonConstructorList[mechamonName];
+MechamonConstructor createMechamonConstructor(string mechamonType, string instanceName = "") {
+	if (!isWithin(mechamonType, _mechamonTypesList)) {
+		return MechamonConstructor("NOTVALIDTYPE");
 	}
-	return MechamonConstructor("FILLER");
+	return MechamonConstructor(mechamonType, instanceName);
 }
 
-vector<string> getPossibleMechamons() {
+vector<string> getPossibleMechamonTypes() {
 	vector<string> result = {};
-	for (pair<string, MechamonConstructor> p : _mechamonConstructorList) {
-		result.push_back(p.first);
+	for (string mechamonName : _mechamonTypesList) {
+		result.push_back(mechamonName);
 	}
 	return result;
 }

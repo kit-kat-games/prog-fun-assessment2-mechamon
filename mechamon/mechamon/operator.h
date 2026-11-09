@@ -18,7 +18,7 @@ public:
 		return name;
 	}
 	Mechamon* getCurrentMechamonPtr() {
-		return currentMechamonPtr;
+		return &mechamonList[curMechamonIndex];
 	}
 	// Methods
 	void addMechamonToList(Mechamon newMechamon, uint8_t mechamonLimit = MECHAMON_LIMIT) {
@@ -26,11 +26,11 @@ public:
 			mechamonList.push_back(newMechamon);
 		}
 		if (mechamonList.size() == 1) {
-			currentMechamonPtr = &(mechamonList[0]);
+			curMechamonIndex = 0;
 		}
 	}
 private:
 	string name;
 	vector<Mechamon> mechamonList = {};
-	Mechamon* currentMechamonPtr = nullptr;
+	int curMechamonIndex = -1;
 };

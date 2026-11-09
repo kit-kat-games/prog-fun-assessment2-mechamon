@@ -1,11 +1,12 @@
 #pragma once
 #include "generic_header.h"
 #include "text_output_handler.h"
-#include "template_funcs.h"
+#include "misc_funcs.h"
 
 void _printInputField(string inputRequest = "") {
-	_printLeftBorder();
-	cout << inputRequest;
+	if (inputRequest != "") {
+		print(inputRequest, true, false, false);
+	}
 }
 
 string _getLineStringInput(string inputRequest = "", bool mustHaveCharacters = true, bool mustHaveAlpha = false) {

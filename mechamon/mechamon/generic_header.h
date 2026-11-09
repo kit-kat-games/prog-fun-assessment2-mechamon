@@ -8,4 +8,6 @@
 #include <chrono>
 #include <windows.h>
 #include <map>
+#include <random>
+#include <algorithm>
 using namespace std;

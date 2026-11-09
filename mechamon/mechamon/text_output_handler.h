@@ -69,7 +69,7 @@ vector<string> _splitLongString(string str) {
 			currentWord += c;
 		}
 		else {
-			if (currentLine.length() + currentWord.length() + 1 < LINE_LENGTH_LIMIT) {
+			if (currentLine.length() + currentWord.length() + 1 <= LINE_LENGTH_LIMIT) {
 				if (currentLine != "") {
 					currentLine += (" " + currentWord);
 				}
@@ -85,37 +85,41 @@ vector<string> _splitLongString(string str) {
 			}
 		}
 	}
+
+	if (currentLine != "" || currentWord != "") {
+		splitStrLines.push_back(currentLine + " " + currentWord);
+	}
 	return splitStrLines;
 }
 
-void print(string str) {
+void print(string str, bool inclLeftBorder = true, bool inclRightBorder = true, bool inclEndl = true) {
 	if (str.length() <= LINE_LENGTH_LIMIT) {
-		_printLeftBorder();
+		if (inclLeftBorder) { _printLeftBorder(); }
 		cout << str;
-		_printRightBorder(str);
-		cout << endl;
+		if (inclRightBorder) { _printRightBorder(str); }
+		if (inclEndl) { cout << endl; }
 	}
 	else {
 		vector<string> splitStrLines = _splitLongString(str);
 		for (string s : splitStrLines) {
-			print(s);
+			print(s, inclLeftBorder, inclRightBorder, inclEndl);
 		}
 	}
 }
 
-void printCentered(string str) {
+void printCentered(string str, bool inclLeftBorder = true, bool inclRightBorder = true, bool inclEndl = true) {
 	if (str.length() <= LINE_LENGTH_LIMIT) {
 		int offset = ((IN_TERMINAL_WIDTH - str.length()) / 2) - 2;
 		string strOuput = string(offset, ' ') + str;
-		_printLeftBorder();
+		if (inclLeftBorder) { _printLeftBorder(); }
 		cout << strOuput;
-		_printRightBorder(strOuput);
-		cout << endl;
+		if (inclRightBorder) { _printRightBorder(strOuput); }
+		if (inclEndl) { cout << endl; }
 	}
 	else {
 		vector<string> splitStrLines = _splitLongString(str);
 		for (string s : splitStrLines) {
-			printCentered(s);
+			printCentered(s, inclLeftBorder, inclRightBorder, inclEndl);
 		}
 	}
 }
@@ -130,41 +134,41 @@ void printEmptyLine() {
 	cout << endl;
 }
 
-void printTyping(string str) {
+void printTyping(string str, bool inclLeftBorder = true, bool inclRightBorder = true, bool inclEndl = true) {
 	if (str.length() <= LINE_LENGTH_LIMIT) {
-		_printLeftBorder();
+		if (inclLeftBorder) { _printLeftBorder(); }
 		for (char c : str) {
 			cout << c;
 			this_thread::sleep_for(chrono::milliseconds(TYPING_INTERVAL));
 		}
-		_printRightBorder(str);
-		cout << endl;
+		if (inclRightBorder) { _printRightBorder(str); }
+		if (inclEndl) { cout << endl; }
 	}
 	else {
 		vector<string> splitStrLines = _splitLongString(str);
 		for (string s : splitStrLines) {
-			printTyping(s);
+			printTyping(s, inclLeftBorder, inclRightBorder, inclEndl);
 		}
 	}
 }
 
-void printCenteredTyping(string str) {
+void printCenteredTyping(string str, bool inclLeftBorder = true, bool inclRightBorder = true, bool inclEndl = true) {
 	if (str.length() <= LINE_LENGTH_LIMIT) {
 		int offset = ((IN_TERMINAL_WIDTH - str.length()) / 2) - 2;
 		string strOuput = string(offset, ' ') + str;
-		_printLeftBorder();
+		if (inclLeftBorder) { _printLeftBorder(); }
 		cout << string(offset, ' ');
 		for (char c : str) {
 			cout << c;
 			this_thread::sleep_for(chrono::milliseconds(TYPING_INTERVAL));
 		}
-		_printRightBorder(strOuput);
-		cout << endl;
+		if (inclRightBorder) { _printRightBorder(strOuput); }
+		if (inclEndl) { cout << endl; }
 	}
 	else {
 		vector<string> splitStrLines = _splitLongString(str);
 		for (string s : splitStrLines) {
-			printCenteredTyping(s);
+			printCenteredTyping(s, inclLeftBorder, inclRightBorder, inclEndl);
 		}
 	}
 }

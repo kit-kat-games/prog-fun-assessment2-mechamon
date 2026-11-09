@@ -29,7 +29,7 @@
     <ClInclude Include="mechamon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="main.h">
+    <ClInclude Include="includes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="consts.h">
@@ -50,7 +50,10 @@
     <ClInclude Include="ascii.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="template_funcs.h">
+    <ClInclude Include="misc_funcs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="data.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
