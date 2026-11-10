@@ -9,3 +9,4 @@
 #include "text_input_handler.h"
 #include "ascii.h"
 #include "data.h"
+#include "random.h"

@@ -3,20 +3,19 @@
 #include "operator.h"
 
 enum TurnStage {
+	tSTAGE_OUTOFBATTLE,
 	tSTAGE_TURNSTART,
 	tSTAGE_MOVESELECTION,
 	tSTAGE_ORDERCALC,
-	tSTAGE_MOVEPROCESS,
+	tSTAGE_PROCESSMOVE,
 	tSTAGE_TURNEND,
-	tSTAGE_OUTOFBATTLE,
 };
 
 enum BattleStage {
+	bSTAGE_GAMESETUP,
 	bSTAGE_BATTLESETUP,
 	bSTAGE_INBATTLE,
 	bSTAGE_BATTLERESULT,
-	bSTAGE_FINDINGBATTLE,
-	bSTAGE_GAMESETUP,
 };
 
 struct GameState {
@@ -63,6 +62,14 @@ string readCurMechamonName(Operator oper) {
 	return oper.getCurrentMechamonPtr()->readName();
 }
 
+string readCurMechamonName(Operator* oper) {
+	return oper->getCurrentMechamonPtr()->readName();
+}
+
 string readCurMechamonType(Operator oper) {
 	return oper.getCurrentMechamonPtr()->readType();
+}
+
+string readCurMechamonType(Operator* oper) {
+	return oper->getCurrentMechamonPtr()->readType();
 }

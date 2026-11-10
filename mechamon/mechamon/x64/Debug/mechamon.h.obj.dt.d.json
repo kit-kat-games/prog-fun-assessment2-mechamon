@@ -385,7 +385,9 @@
             "c:\\program files\\microsoft visual studio\\18\\insiders\\vc\\tools\\msvc\\14.52.37025\\include\\algorithm",
             "c:\\program files\\microsoft visual studio\\18\\insiders\\vc\\tools\\msvc\\14.52.37025\\include\\__msvc_heap_algorithms.hpp",
             "c:\\program files\\microsoft visual studio\\18\\insiders\\vc\\tools\\msvc\\14.52.37025\\include\\__msvc_minmax.hpp",
-            "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\misc_funcs.h"
+            "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\misc_funcs.h",
+            "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_output_handler.h",
+            "c:\\users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\consts.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

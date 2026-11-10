@@ -3,35 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\18\\INSIDERS\\VC\\TOOLS\\MSVC\\14.52.37025\\INCLUDE\\ALGORITHM||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\mechamon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\battle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\generic_header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\generic_header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\game_state.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\includes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\includes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_output_handler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\text_output_handler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\mechamon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\game_state.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\consts.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\consts.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\includes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\includes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_input_handler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -42,12 +39,20 @@
       "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\misc_funcs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\operator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\operator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\prepared_text_outputs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\prepared_text_outputs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_output_handler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\text_output_handler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\generic_header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\generic_header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\consts.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\consts.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\operator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\operator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,66 +75,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "algorithm",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.52.37025\\include\\algorithm",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.52.37025\\include\\algorithm",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.52.37025\\include\\algorithm",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Insiders\\VC\\Tools\\MSVC\\14.52.37025\\include\\algorithm",
-              "ViewState": "AgIAAGcZAAAAAAAAAAAMwHkZAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-11-09T12:36:23.223Z",
+              "Title": "battle.h",
+              "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h",
+              "RelativeDocumentMoniker": "mechamon\\battle.h",
+              "ToolTip": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h",
+              "RelativeToolTip": "mechamon\\battle.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-10T11:13:36.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\main.cpp",
               "RelativeDocumentMoniker": "mechamon\\main.cpp",
               "ToolTip": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\main.cpp",
               "RelativeToolTip": "mechamon\\main.cpp",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFkAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAcwJkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-30T11:11:09.562Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "includes.h",
               "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\includes.h",
               "RelativeDocumentMoniker": "mechamon\\includes.h",
               "ToolTip": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\includes.h",
               "RelativeToolTip": "mechamon\\includes.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-30T11:12:06.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "generic_header.h",
-              "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\generic_header.h",
-              "RelativeDocumentMoniker": "mechamon\\generic_header.h",
-              "ToolTip": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\generic_header.h",
-              "RelativeToolTip": "mechamon\\generic_header.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-30T11:11:33.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "mechamon.h",
-              "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.h",
-              "RelativeDocumentMoniker": "mechamon\\mechamon.h",
-              "ToolTip": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.h",
-              "RelativeToolTip": "mechamon\\mechamon.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-30T11:11:57.21Z",
               "EditorCaption": ""
             },
             {
@@ -140,14 +119,52 @@
               "RelativeDocumentMoniker": "mechamon\\data.h",
               "ToolTip": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\data.h",
               "RelativeToolTip": "mechamon\\data.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-11-09T12:25:17.059Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
+              "Title": "prepared_text_outputs.h",
+              "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\prepared_text_outputs.h",
+              "RelativeDocumentMoniker": "mechamon\\prepared_text_outputs.h",
+              "ToolTip": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\prepared_text_outputs.h",
+              "RelativeToolTip": "mechamon\\prepared_text_outputs.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-09T15:22:08.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "generic_header.h",
+              "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\generic_header.h",
+              "RelativeDocumentMoniker": "mechamon\\generic_header.h",
+              "ToolTip": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\generic_header.h",
+              "RelativeToolTip": "mechamon\\generic_header.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T11:11:33.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "mechamon.h",
+              "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.h",
+              "RelativeDocumentMoniker": "mechamon\\mechamon.h",
+              "ToolTip": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.h",
+              "RelativeToolTip": "mechamon\\mechamon.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T11:11:57.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "text_input_handler.h",
               "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_input_handler.h",
               "RelativeDocumentMoniker": "mechamon\\text_input_handler.h",
@@ -160,46 +177,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "game_state.h",
               "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.h",
               "RelativeDocumentMoniker": "mechamon\\game_state.h",
               "ToolTip": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.h",
               "RelativeToolTip": "mechamon\\game_state.h",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAowD0AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-11-09T11:32:58.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "misc_funcs.h",
               "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\misc_funcs.h",
               "RelativeDocumentMoniker": "mechamon\\misc_funcs.h",
               "ToolTip": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\misc_funcs.h",
               "RelativeToolTip": "mechamon\\misc_funcs.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-11-09T12:11:19.576Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "text_output_handler.h",
               "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_output_handler.h",
               "RelativeDocumentMoniker": "mechamon\\text_output_handler.h",
               "ToolTip": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_output_handler.h",
               "RelativeToolTip": "mechamon\\text_output_handler.h",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-30T11:15:59.938Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "consts.h",
               "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\consts.h",
               "RelativeDocumentMoniker": "mechamon\\consts.h",
@@ -207,12 +224,11 @@
               "RelativeToolTip": "mechamon\\consts.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-30T11:14:55.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T11:14:55.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "operator.h",
               "DocumentMoniker": "C:\\Users\\frpex\\source\\repos\\prog-fun-assessment2-totallydistinctpokemongame\\prog-fun-assessment2-totallylegallydistinctpokemongame\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\operator.h",
               "RelativeDocumentMoniker": "mechamon\\operator.h",
@@ -220,8 +236,7 @@
               "RelativeToolTip": "mechamon\\operator.h",
               "ViewState": "AgIAAAIAAAAAAAAAAAAlwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-30T11:11:45.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T11:11:45.794Z"
             }
           ]
         }

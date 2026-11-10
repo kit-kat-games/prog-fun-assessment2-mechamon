@@ -1,6 +1,7 @@
 #pragma once
 #include "generic_header.h"
 #include "misc_funcs.h"
+#include "text_output_handler.h"
 
 struct MechamonConstructor {
 public:
@@ -42,9 +43,11 @@ MechamonConstructor createMechamonConstructor(string mechamonType, string instan
 }
 
 vector<string> getPossibleMechamonTypes() {
-	vector<string> result = {};
-	for (string mechamonName : _mechamonTypesList) {
-		result.push_back(mechamonName);
-	}
-	return result;
+	return _mechamonTypesList;
+}
+
+void displayMechamonInfo(string mechamonType) {
+	int HP = 100;
+	print("Type: " + mechamonType);
+	print("HP: " + to_string(HP));
 }

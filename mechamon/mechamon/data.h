@@ -8,3 +8,11 @@ const vector<string> VALID_OPPONENT_NAMES = {
 	"Jessie", "Kylian", "Hope", "Nelson", "Heath", "Noah", "Niko", "Callie", "Aziel", "Camryn",
 	"Amelie", "Alivia", "Rocco", "Quinn", "Andres", "Lilliana", "Francisco", "Dennis", "Gloria", "Tate",
 };
+
+const vector<string> VALID_MECHAMON_NAMES = {
+	"Cyb", "Rusty", "Sparkle", "Exator", "Ratchet", "Ion", "Axuz", "Gadget", "Jet", "Norbit",
+	"Gearz", "Clank", "Tracker", "Dustie", "Azert", "Dotty", "Talus", "Silver", "Mach", "Elur",
+	"Flash", "Nova", "Bit", "Axel", "Spencer", "Skip", "Max", "Spark", "Scrappy", "Bolt",
+	"Synari", "Cindril", "Solaria", "Celeste", "Hector", "Zeta", "Prism", "Lancer", "Helix", "Aurora",
+	"Lfrith", "Atlas", "Unicorn", "Calibarn", "Barbatos", "Exia", "Cora", "Flux", "Prisma", "Aerial",
+};
