@@ -2,6 +2,7 @@
 #include "generic_header.h"
 #include "misc_funcs.h"
 #include "text_output_handler.h"
+#include "globals.h"
 
 // Status Flag For A Mechamon Would Be 0b0000'0000'0000'0000'0000
 // Most right is the mask flags for what statuses are active

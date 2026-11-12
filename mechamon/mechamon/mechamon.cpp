@@ -1,3 +1,4 @@
+#pragma once
 #include "mechamon.h"
 
 MechamonConstructor createMechamonConstructor(string mechamonType, string instanceName) {

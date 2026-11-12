@@ -1,3 +1,4 @@
+#pragma once
 #include "battle.h"
 
 vector<string> getPossibleActionInputs() {

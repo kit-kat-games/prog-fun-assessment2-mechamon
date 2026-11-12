@@ -3,6 +3,7 @@
 #include "mechamon.h"
 #include "consts.h"
 #include "text_output_handler.h"
+#include "globals.h"
 
 const uint8_t OPERATOR_FLAG_RAN = 0b0001;
 

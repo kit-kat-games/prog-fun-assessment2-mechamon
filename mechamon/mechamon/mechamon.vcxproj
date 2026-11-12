@@ -32,6 +32,7 @@
     <ClInclude Include="data.h" />
     <ClInclude Include="game_state.h" />
     <ClInclude Include="generic_header.h" />
+    <ClInclude Include="globals.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="mechamon.h" />
     <ClInclude Include="misc_funcs.h" />

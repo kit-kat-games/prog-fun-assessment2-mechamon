@@ -1,3 +1,4 @@
+#pragma once
 #include "game_state.h"
 
 // Overloads of 2 functions - allow either an operator object, or a pointer to an operator object to be passed in

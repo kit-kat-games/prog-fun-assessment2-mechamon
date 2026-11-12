@@ -1,3 +1,4 @@
+#pragma once
 #include "text_input_handler.h"
 
 void _printInputField(string inputRequest = "") {

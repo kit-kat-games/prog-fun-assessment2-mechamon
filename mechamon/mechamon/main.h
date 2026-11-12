@@ -10,3 +10,4 @@
 #include "data.h"
 #include "random.h"
 #include "battle.h"
+#include "globals.h"
