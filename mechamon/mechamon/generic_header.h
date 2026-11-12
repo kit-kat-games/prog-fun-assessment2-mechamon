@@ -11,3 +11,9 @@
 #include <random>
 #include <algorithm>
 using namespace std;
+
+#include "game_state.h"
+#include "text_output_handler.h"
+
+GameState gameState;
+TextOutput textOutput;

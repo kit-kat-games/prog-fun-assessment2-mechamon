@@ -21,9 +21,6 @@
     <ClCompile Include="battle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="text_output_handler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="text_input_handler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

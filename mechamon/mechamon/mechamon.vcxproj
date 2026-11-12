@@ -24,7 +24,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mechamon.cpp" />
     <ClCompile Include="text_input_handler.cpp" />
-    <ClCompile Include="text_output_handler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ascii.h" />

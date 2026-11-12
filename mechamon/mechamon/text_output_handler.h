@@ -8,6 +8,8 @@ public:
 		hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
 		GetConsoleScreenBufferInfo(hConsole, &consoleInfo);
 		default_attributes = consoleInfo.wAttributes;
+		curTextColor = -1;
+		allowColoredBorder = false;
 	}
 	
 	static inline void print(string str, bool inclLeftBorder = true, bool inclRightBorder = true, bool inclEndl = true) {
@@ -86,13 +88,13 @@ public:
 		}
 	}
 private:
-	bool allowColoredBorder = false;
+	static bool allowColoredBorder;
 
 	// Stack Overflow did help in finding the correct api to use, as well as the general syntax for storing attributes and returning to the default.
-	HANDLE hConsole;
-	CONSOLE_SCREEN_BUFFER_INFO consoleInfo;
-	WORD default_attributes;
-	int curTextColor = -1;
+	static HANDLE hConsole;
+	static CONSOLE_SCREEN_BUFFER_INFO consoleInfo;
+	static WORD default_attributes;
+	static int curTextColor;
 
 	static inline void setTextColor(int newColor) {
 		SetConsoleTextAttribute(hConsole, newColor);
@@ -158,6 +160,4 @@ private:
 		}
 		return splitStrLines;
 	}
-
-	
 };

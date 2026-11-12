@@ -30,24 +30,24 @@ string getStatusEffectString(uint8_t statusApplyMask) {
 
 void displayInfoOfType(string type) {
 	if (!isWithin(type, _mechamonTypesList)) {
-		print(type + " is not a valid mechamon type.");
+		textOutput.print(type + " is not a valid mechamon type.");
 		return;
 	}
-	print("Type: " + type);
-	print("ATK: " + to_string(_typeConstructorMap[type].attack));
-	print("HP: " + to_string(_typeConstructorMap[type].health));
-	print("SPD: " + to_string(_typeConstructorMap[type].speed));
+	textOutput.print("Type: " + type);
+	textOutput.print("ATK: " + to_string(_typeConstructorMap[type].attack));
+	textOutput.print("HP: " + to_string(_typeConstructorMap[type].health));
+	textOutput.print("SPD: " + to_string(_typeConstructorMap[type].speed));
 }
 
 void displayInfoOfMechamon(Mechamon* mechamonPtr) {
-	print("Type: " + mechamonPtr->readType());
-	print("ATK: " + to_string(mechamonPtr->readAttack()));
-	print("HP: " + to_string(mechamonPtr->readHealth()));
-	print("SPD: " + to_string(mechamonPtr->readSpeed()));
+	textOutput.print("Type: " + mechamonPtr->readType());
+	textOutput.print("ATK: " + to_string(mechamonPtr->readAttack()));
+	textOutput.print("HP: " + to_string(mechamonPtr->readHealth()));
+	textOutput.print("SPD: " + to_string(mechamonPtr->readSpeed()));
 }
 
 void displayInfoOfAttack(Attack attack) {
-	print("Name: " + attack.name);
-	print("DMG: " + to_string(attack.damage));
-	print("Status Effect: " + getStatusEffectString(attack.statusApplyMask));
+	textOutput.print("Name: " + attack.name);
+	textOutput.print("DMG: " + to_string(attack.damage));
+	textOutput.print("Status Effect: " + getStatusEffectString(attack.statusApplyMask));
 }

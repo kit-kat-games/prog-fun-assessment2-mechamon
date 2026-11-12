@@ -2,7 +2,7 @@
 
 void _printInputField(string inputRequest = "") {
 	if (inputRequest != "") {
-		print(inputRequest, true, false, false);
+		textOutput.print(inputRequest, true, false, false);
 	}
 }
 
@@ -11,10 +11,10 @@ string _getLineStringInput(string inputRequest = "", bool mustHaveCharacters = t
 		string input;
 		getline(cin, input);
 		if (cin.fail()) {
-			print("ERROR: That is not a string.");
+			textOutput.print("ERROR: That is not a string.");
 		}
 		else if (input == "") {
-			print("ERROR: That is an empty string, please give an input with characters.");
+			textOutput.print("ERROR: That is an empty string, please give an input with characters.");
 		}
 		else {
 			bool valid = true;
@@ -26,7 +26,7 @@ string _getLineStringInput(string inputRequest = "", bool mustHaveCharacters = t
 					}
 				}
 				if (noAlpha) {
-					print("ERROR: There are no letters in that input, please give an input with letters.");
+					textOutput.print("ERROR: There are no letters in that input, please give an input with letters.");
 					valid = false;
 				}
 			}
@@ -38,7 +38,7 @@ string _getLineStringInput(string inputRequest = "", bool mustHaveCharacters = t
 					}
 				}
 				if (noCharacters) {
-					print("ERROR: There are no characters in that input, please give an input with characters.");
+					textOutput.print("ERROR: There are no characters in that input, please give an input with characters.");
 					valid = false;
 				}
 			}
@@ -77,7 +77,7 @@ string getUserMultipleChoiceInput(vector<string> options, string inputRequest, b
 	}
 
 	if (inputRequest != "") {
-		print(inputRequest);
+		textOutput.print(inputRequest);
 	}
 	while (true) {
 		string input = getUserStringInput("Please enter your choice of option: ");
@@ -94,7 +94,7 @@ string getUserMultipleChoiceInput(vector<string> options, string inputRequest, b
 			break;
 		}
 		else {
-			print("ERROR: That is not a valid choice. Please choose again.");
+			textOutput.print("ERROR: That is not a valid choice. Please choose again.");
 		}
 	}
 	return result;
