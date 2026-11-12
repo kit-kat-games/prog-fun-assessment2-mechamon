@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\text_output_handler.obj",
+            "outputs": [
+                "x64\\Debug\\text_output_handler.cpp.obj.dt.module.json",
+                "x64\\Debug\\text_output_handler.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}

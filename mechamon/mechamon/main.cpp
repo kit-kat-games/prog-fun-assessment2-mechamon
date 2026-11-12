@@ -1,6 +1,14 @@
-#include "includes.h"
+#include "main.h"
 
 GameState gameState;
+
+void printOpeningHeader() {
+    printBorderLine();
+    printEmptyLine();
+    printCentered("Welcome to the Mechamon monster battle simulation!");
+    printEmptyLine();
+    printBorderLine();
+}
 
 string getPlayerMechamonChoice() {
     // Get Possible Mechamon Choices

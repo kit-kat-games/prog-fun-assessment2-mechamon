@@ -54,23 +54,13 @@ public:
 private:
 	TurnStage turnStage = tSTAGE_OUTOFBATTLE;
 	BattleStage battleStage = bSTAGE_GAMESETUP;
-	Operator player = Operator("NOTSETUP");
-	Operator opponent = Operator("NOTSETUP");
+	Operator player = Operator();
+	Operator opponent = Operator();
 };
 
 
-string readCurMechamonName(Operator oper) {
-	return oper.getCurrentMechamonPtr()->readName();
-}
-
-string readCurMechamonName(Operator* oper) {
-	return oper->getCurrentMechamonPtr()->readName();
-}
-
-string readCurMechamonType(Operator oper) {
-	return oper.getCurrentMechamonPtr()->readType();
-}
-
-string readCurMechamonType(Operator* oper) {
-	return oper->getCurrentMechamonPtr()->readType();
-}
+// Overloads of 2 functions - allow either an operator object, or a pointer to an operator object to be passed in
+string readCurMechamonName(Operator oper);
+string readCurMechamonName(Operator* oper);
+string readCurMechamonType(Operator oper);
+string readCurMechamonType(Operator* oper);
