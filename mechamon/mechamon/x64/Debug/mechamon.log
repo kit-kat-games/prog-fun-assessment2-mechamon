@@ -1,11 +1,12 @@
 ﻿  main.cpp
-C:\Users\frpex\source\repos\prog-fun-assessment2-totallydistinctpokemongame\prog-fun-assessment2-totallylegallydistinctpokemongame\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(50,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(50,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\frpex\source\repos\prog-fun-assessment2-totallydistinctpokemongame\prog-fun-assessment2-totallylegallydistinctpokemongame\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(112,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(112,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\frpex\source\repos\prog-fun-assessment2-totallydistinctpokemongame\prog-fun-assessment2-totallylegallydistinctpokemongame\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(157,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(157,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-  mechamon.vcxproj -> C:\Users\frpex\source\repos\prog-fun-assessment2-totallydistinctpokemongame\prog-fun-assessment2-totallylegallydistinctpokemongame\prog-fun-assessment2-mechamon\mechamon\x64\Debug\mechamon.exe
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.h(67,1): warning C4715: 'getPriorityOfAction': not all control paths return a value
+  mechamon.vcxproj -> C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\x64\Debug\mechamon.exe

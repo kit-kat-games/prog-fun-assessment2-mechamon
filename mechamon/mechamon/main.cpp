@@ -36,7 +36,7 @@ string getPlayerMechamonChoice() {
         printEmptyLine();
         string infoChoice = getUserMultipleChoiceInput(possibleInputs, ("Please enter the number next to the mechamon you wish to view information about: " + choiceDisplayString + "."));
         printEmptyLine();
-        displayMechamonInfo(mechamonMap[infoChoice]);
+        displayInfoOfType(mechamonMap[infoChoice]);
         printEmptyLine();
     }
     return mechamonMap[choice];
@@ -46,7 +46,12 @@ bool createPlayer() {
     print("Time to create your operator!");
 
     // Prompt player for their choice of name
-    string oName = getUserStringInput("Please enter your operator's name: ");
+    string oName = getUserStringInput("Please enter your operator's name. Enter 'RANDOM' for a random name instead: ");
+    if (stringsEqualCaseInsensitive(oName, "RANDOM")) {
+        vector<string> tempNames = VALID_OPERATOR_NAMES;
+        shuffle(tempNames.begin(), tempNames.end(), rng);
+        oName = tempNames[0];
+    }
     Operator player = Operator(oName);
     print("Your operator's name is " + player.readName() + ".");
 
@@ -92,7 +97,7 @@ bool createPlayer() {
 
 void createOpponent() {
     // Randomly choose an opponent name
-    vector<string> tempOpponentNames = VALID_OPPONENT_NAMES;
+    vector<string> tempOpponentNames = VALID_OPERATOR_NAMES;
     shuffle(tempOpponentNames.begin(), tempOpponentNames.end(), rng);
     string oName = tempOpponentNames[0];
 
@@ -117,45 +122,133 @@ void createOpponent() {
     gameState.setOpponent(opponent);
 }
 
-bool resolveBattle() {
-    switch (gameState.readTurnStage()) {
-    case tSTAGE_OUTOFBATTLE:
-        printCentered("Battle Started!");
-        printBorderLine();
-        gameState.setTurnStage(tSTAGE_TURNSTART);
-        break;
-    case tSTAGE_TURNSTART:
-        //
-        //
-        //
-        gameState.setTurnStage(tSTAGE_MOVESELECTION);
-        break;
-    case tSTAGE_MOVESELECTION:
-        //
-        //
-        //
-        gameState.setTurnStage(tSTAGE_ORDERCALC);
-        break;
-    case tSTAGE_ORDERCALC:
-        //
-        //
-        //
-        gameState.setTurnStage(tSTAGE_PROCESSMOVE);
-        break;
-    case tSTAGE_PROCESSMOVE:
-        //
-        //
-        //
-        gameState.setTurnStage(tSTAGE_TURNEND);
-        break;
-    case tSTAGE_TURNEND:
-        //
-        //
-        //
-        gameState.setTurnStage(tSTAGE_TURNSTART);
-        break;
+void resolveBattle() {
+    Action pAction = ACTION_NA;
+    Action oAction = ACTION_NA;
+    int pPriority = -1;
+    int oPriority = -1;
+    bool playerFirst = true;
+
+    while (true) {
+        if (gameState.readBattleStage() == bSTAGE_BATTLERESULT) {
+            return;
+        }
+        switch (gameState.readTurnStage()) {
+        case tSTAGE_OUTOFBATTLE:
+            printCentered("Battle Started!");
+            printBorderLine();
+            gameState.setTurnStage(tSTAGE_TURNSTART);
+            break;
+        case tSTAGE_TURNSTART:
+            //
+            //
+            //
+            gameState.setTurnStage(tSTAGE_ACTIONSELECTION);
+            break;
+        case tSTAGE_ACTIONSELECTION:
+            resolveActionSelection(&pAction, &oAction, &gameState);
+            gameState.setTurnStage(tSTAGE_ORDERCALC);
+            break;
+        case tSTAGE_ORDERCALC:
+            // Decide the priority of each operator's action
+            if (pAction == ACTION_ATTACK) {
+                pPriority = gameState.getPlayerPtr()->getCurrentMechamonPtr()->readSpeed();
+            }
+            else {
+                pPriority = getPriorityOfAction(pAction);
+            }
+            if (oAction == ACTION_ATTACK) {
+                oPriority = gameState.getOpponentPtr()->getCurrentMechamonPtr()->readSpeed();
+            }
+            else {
+                oPriority = getPriorityOfAction(oAction);
+            }
+
+            gameState.setTurnStage(tSTAGE_PROCESSACTION);
+            break;
+        case tSTAGE_PROCESSACTION:
+            // Player go first, then opponent
+            if (pPriority > oPriority) {
+                playerFirst = true;
+            } 
+            // Randomly decide whether player or opponent goes first
+            else if (pPriority == oPriority) {
+                vector<char> opts = { 'p', 'o' };
+                shuffle(opts.begin(), opts.end(), rng);
+                if (opts[0] == 'p') {
+                    playerFirst = true;
+                }
+                else {
+                    playerFirst = false;
+                }
+            }
+            // Opponent go first, then player
+            else {
+                playerFirst = false;
+            }
+
+            if (playerFirst) {
+                resolveAction(pAction, gameState.getPlayerPtr(), gameState.getOpponentPtr(), &gameState);
+                printEmptyLine();
+                resolveAction(oAction, gameState.getOpponentPtr(), gameState.getPlayerPtr(), &gameState);
+            }
+            else {
+                resolveAction(oAction, gameState.getOpponentPtr(), gameState.getPlayerPtr(), &gameState);
+                printEmptyLine();
+                resolveAction(pAction, gameState.getPlayerPtr(), gameState.getOpponentPtr(), &gameState);
+            }
+
+            printEmptyLine();
+            gameState.setTurnStage(tSTAGE_TURNEND);
+            break;
+        case tSTAGE_TURNEND:
+            if (gameState.getPlayerPtr()->getCurrentMechamonPtr()->isDead() || gameState.getOpponentPtr()->getCurrentMechamonPtr()->isDead()) {
+                gameState.setBattleStage(bSTAGE_BATTLERESULT);
+                gameState.setTurnStage(tSTAGE_OUTOFBATTLE);
+                return;
+            }
+            gameState.setTurnStage(tSTAGE_TURNSTART);
+            break;
+        }
     }
-    return true;
+}
+
+BattleStage resolveBattleResult() {
+    // If all of the player's mechamons died, end the game and go to game result (can quit application or start another run)
+    if (gameState.getPlayerPtr()->getCurrentMechamonPtr()->isDead()) {
+        return bSTAGE_GAMERESULT;
+    }
+
+    // If either the player beat all of the opponent's mechamons, or either player ran, allow for either ending the game or finding a new battle
+    if (gameState.getOpponentPtr()->getCurrentMechamonPtr()->isDead()) {
+        print("You beat " + gameState.readOpponentName() + "!");
+    }
+    else if (gameState.getPlayerPtr()->readRanFromBattle()) {
+        print("You ran... boo!");
+    }
+    else if (gameState.getOpponentPtr()->readRanFromBattle()) {
+        print(gameState.readOpponentName() + " ran! Good job scaring them off.");
+    }
+
+    // Have player decide whether to end the game or find another battle
+    string choice = getUserMultipleChoiceInput({ "Y", "N" }, "Would you like to find another battle? Enter Y or N: ");
+    if (stringsEqualCaseInsensitive(choice, "N")) {
+        print("Ending Current Game.");
+        printBorderLine();
+        return bSTAGE_GAMERESULT;
+    }
+    print("Healing your mechamons, finding you another opponent.");
+    gameState.getPlayerPtr()->healAllMechamons();
+    printBorderLine();
+    return bSTAGE_BATTLESETUP;
+}
+
+bool resolveGameResult() {
+    string choice = getUserMultipleChoiceInput({ "Y", "N" }, "Would you like to play again? Enter Y or N: ");
+    if (stringsEqualCaseInsensitive(choice, "Y")) {
+        return true;
+    }
+    return false;
 }
 
 int main()
@@ -179,15 +272,28 @@ int main()
         case bSTAGE_BATTLESETUP:
             // Create a new opponent
             createOpponent();
-            print("Your first opponent is " + gameState.readOpponentName() + ". Their mechamon's name is " + readCurMechamonName(gameState.getOpponentPtr()) +
+            print("Your opponent is " + gameState.readOpponentName() + ". Their mechamon's name is " + readCurMechamonName(gameState.getOpponentPtr()) +
                 " of type " + readCurMechamonType(gameState.getOpponentPtr()) + ".");
             printBorderLine();
             gameState.setBattleStage(bSTAGE_INBATTLE);
             break;
         case bSTAGE_INBATTLE:
-            bool battleResolved = resolveBattle();
-            if (battleResolved) {
-                gameState.setBattleStage(bSTAGE_BATTLERESULT);
+            resolveBattle();
+            gameState.setBattleStage(bSTAGE_BATTLERESULT);
+            break;
+        case bSTAGE_BATTLERESULT:
+            gameState.setBattleStage(resolveBattleResult());
+            break;
+        case bSTAGE_GAMERESULT:
+            if (!resolveGameResult()) {
+                print("Application Closing. Thank you for playing!");
+                gameRunning = false;
+            }
+            else {
+                print("Starting Setup for new Game.");
+                printBorderLine();
+                createdPlayer = false;
+                gameState.setBattleStage(bSTAGE_GAMESETUP);
             }
             break;
         }

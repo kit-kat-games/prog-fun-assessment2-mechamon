@@ -10,3 +10,4 @@
 #include "ascii.h"
 #include "data.h"
 #include "random.h"
+#include "battle.h"

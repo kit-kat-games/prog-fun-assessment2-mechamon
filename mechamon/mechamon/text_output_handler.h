@@ -69,7 +69,7 @@ vector<string> _splitLongString(string str) {
 			currentWord += c;
 		}
 		else {
-			if (currentLine.length() + currentWord.length() + 1 <= LINE_LENGTH_LIMIT) {
+			if (currentLine.length() + currentWord.length() + 1 < LINE_LENGTH_LIMIT) {
 				if (currentLine != "") {
 					currentLine += (" " + currentWord);
 				}
