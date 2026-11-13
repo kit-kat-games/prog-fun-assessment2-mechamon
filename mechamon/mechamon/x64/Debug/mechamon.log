@@ -1,155 +1,73 @@
 ﻿  battle.cpp
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(31,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(35,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'battle.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(72,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(76,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'battle.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(120,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(124,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'battle.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\globals.h(6,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(32,4): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'battle.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\globals.h(6,11): error C2146: syntax error: missing ';' before identifier 'gameState'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(49,5): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'battle.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.h(31,69): error C2061: syntax error: identifier 'GameState'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(57,4): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'battle.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.h(32,75): error C2061: syntax error: identifier 'GameState'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(65,5): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'battle.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(47,6): error C2182: '_resolveViewInfo': this use of 'void' is not valid
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(47,34): error C2065: 'gameStatePtr': undeclared identifier
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(47,48): error C2143: syntax error: missing ';' before '{'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(48,2): error C3927: '->': trailing return type is not allowed after a non-function declarator
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(48,12): error C3484: syntax error: expected '->' before the return type
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(48,13): error C3613: missing return type after '->' ('int' assumed)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(48,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(48,2): error C2371: 'textOutput': redefinition; different basic types
-      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\globals.h(7,12):
-      see declaration of 'textOutput'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(68,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'battle.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(48,13): error C2146: syntax error: missing ';' before identifier 'printEmptyLine'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(49,2): error C3927: '->': trailing return type is not allowed after a non-function declarator
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(49,12): error C3484: syntax error: expected '->' before the return type
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(49,13): error C3613: missing return type after '->' ('int' assumed)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(49,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(49,2): error C2371: 'textOutput': redefinition; different basic types
-      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\globals.h(7,12):
-      see declaration of 'textOutput'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(80,7): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'battle.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(49,13): error C2146: syntax error: missing ';' before identifier 'print'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(50,2): error C3927: '->': trailing return type is not allowed after a non-function declarator
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(50,12): error C3484: syntax error: expected '->' before the return type
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(50,13): error C3613: missing return type after '->' ('int' assumed)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(50,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(50,2): error C2371: 'textOutput': redefinition; different basic types
-      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\globals.h(7,12):
-      see declaration of 'textOutput'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(92,7): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'battle.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(50,13): error C2146: syntax error: missing ';' before identifier 'print'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(51,2): error C3927: '->': trailing return type is not allowed after a non-function declarator
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(51,12): error C3484: syntax error: expected '->' before the return type
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(51,13): error C3613: missing return type after '->' ('int' assumed)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(51,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(51,2): error C2371: 'textOutput': redefinition; different basic types
-      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\globals.h(7,12):
-      see declaration of 'textOutput'
-  
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(51,13): error C2146: syntax error: missing ';' before identifier 'print'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(52,2): error C3927: '->': trailing return type is not allowed after a non-function declarator
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(52,12): error C3484: syntax error: expected '->' before the return type
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(52,13): error C3613: missing return type after '->' ('int' assumed)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(52,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(52,2): error C2371: 'textOutput': redefinition; different basic types
-      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\globals.h(7,12):
-      see declaration of 'textOutput'
-  
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(52,13): error C2146: syntax error: missing ';' before identifier 'print'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(53,2): error C3927: '->': trailing return type is not allowed after a non-function declarator
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(53,12): error C3484: syntax error: expected '->' before the return type
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(53,13): error C3613: missing return type after '->' ('int' assumed)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(53,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(53,2): error C2371: 'textOutput': redefinition; different basic types
-      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\globals.h(7,12):
-      see declaration of 'textOutput'
-  
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(53,13): error C2146: syntax error: missing ';' before identifier 'print'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(54,2): error C3927: '->': trailing return type is not allowed after a non-function declarator
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(54,12): error C3484: syntax error: expected '->' before the return type
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(54,13): error C3613: missing return type after '->' ('int' assumed)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(54,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(54,2): error C2371: 'textOutput': redefinition; different basic types
-      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\globals.h(7,12):
-      see declaration of 'textOutput'
-  
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(54,13): error C2146: syntax error: missing ';' before identifier 'print'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(56,2): error C3927: '->': trailing return type is not allowed after a non-function declarator
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(56,12): error C3484: syntax error: expected '->' before the return type
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(56,13): error C3613: missing return type after '->' ('int' assumed)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(56,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(56,2): error C2371: 'textOutput': redefinition; different basic types
-      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\globals.h(7,12):
-      see declaration of 'textOutput'
-  
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(56,13): error C2146: syntax error: missing ';' before identifier 'printEmptyLine'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(58,2): error C2059: syntax error: 'if'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(58,47): error C2143: syntax error: missing ';' before '{'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(58,47): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(61,2): error C2059: syntax error: 'else'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(61,52): error C2143: syntax error: missing ';' before '{'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(61,52): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(64,2): error C2059: syntax error: 'else'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(64,52): error C2143: syntax error: missing ';' before '{'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(64,52): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(71,2): error C2059: syntax error: 'else'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(71,52): error C2143: syntax error: missing ';' before '{'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(71,52): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(81,2): error C2059: syntax error: 'else'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(81,52): error C2143: syntax error: missing ';' before '{'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(81,52): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(85,2): error C3927: '->': trailing return type is not allowed after a non-function declarator
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(85,12): error C3484: syntax error: expected '->' before the return type
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(85,13): error C3613: missing return type after '->' ('int' assumed)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(85,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(85,2): error C2371: 'textOutput': redefinition; different basic types
-      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\globals.h(7,12):
-      see declaration of 'textOutput'
-  
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(85,13): error C2146: syntax error: missing ';' before identifier 'printEmptyLine'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(86,1): error C2059: syntax error: '}'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(86,1): error C2143: syntax error: missing ';' before '}'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(88,94): error C2143: syntax error: missing ';' before '{'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(88,94): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(135,75): error C2061: syntax error: identifier 'GameState'
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(149,3): error C2065: 'gameStatePtr': undeclared identifier
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.cpp(150,3): error C2065: 'gameStatePtr': undeclared identifier
   game_state.cpp
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(31,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(35,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'game_state.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(72,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(76,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'game_state.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(120,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(124,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'game_state.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\globals.h(6,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(32,4): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'game_state.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\globals.h(6,11): error C2146: syntax error: missing ';' before identifier 'gameState'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(49,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(57,4): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(65,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(68,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(80,7): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(92,7): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'game_state.cpp')
   
   main.cpp
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(31,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(35,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(72,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(76,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(120,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(124,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
 C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(25,10): error C2143: syntax error: missing ';' before '*'
@@ -182,20 +100,20 @@ C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.
 C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(44,25): error C2061: syntax error: identifier 'Mechamon'
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(60,9): error C2065: 'Mechamon': undeclared identifier
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,9): error C2065: 'Mechamon': undeclared identifier
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(60,2): error C2923: 'std::vector': 'Mechamon' is not a valid template type argument for parameter '_Ty'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,2): error C2923: 'std::vector': 'Mechamon' is not a valid template type argument for parameter '_Ty'
   (compiling source file 'main.cpp')
-      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(60,9):
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,9):
       see declaration of 'Mechamon'
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(60,2): error C2976: 'std::vector': too few template arguments
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,2): error C2976: 'std::vector': too few template arguments
   (compiling source file 'main.cpp')
       C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vector(459,7):
       see declaration of 'std::vector'
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(60,19): error C3000: 'std::vector': use of class template requires template argument list. Argument deduction is not allowed in non-static data member
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,19): error C3000: 'std::vector': use of class template requires template argument list. Argument deduction is not allowed in non-static data member
   (compiling source file 'main.cpp')
       C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vector(459,7):
       see declaration of 'std::vector'
@@ -206,28 +124,25 @@ C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.
 C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(46,27): error C2065: 'newMechamon': undeclared identifier
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,8): error C2065: 'Mechamon': undeclared identifier
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(32,4): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,17): error C2146: syntax error: missing ';' before identifier 'mechamon'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(49,5): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,26): error C2143: syntax error: missing ';' before ':'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(57,4): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,26): error C2143: syntax error: missing ')' before ':'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(65,5): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,26): error C2059: syntax error: ':'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(68,5): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,40): error C2059: syntax error: ')'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(80,7): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,42): error C2143: syntax error: missing ';' before '{'
-  (compiling source file 'main.cpp')
-  
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(54,4): error C2065: 'mechamon': undeclared identifier
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(92,7): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'main.cpp')
   
 C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\main.cpp(84,12): error C2660: 'Operator::addMechamonToList': function does not take 1 arguments
@@ -267,13 +182,13 @@ C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\main.cpp(
       see declaration of 'Operator'
   
   mechamon.cpp
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(31,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(35,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'mechamon.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(72,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(76,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'mechamon.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(120,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(124,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'mechamon.cpp')
   
 C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(25,10): error C2143: syntax error: missing ';' before '*'
@@ -306,20 +221,20 @@ C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.
 C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(44,25): error C2061: syntax error: identifier 'Mechamon'
   (compiling source file 'mechamon.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(60,9): error C2065: 'Mechamon': undeclared identifier
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,9): error C2065: 'Mechamon': undeclared identifier
   (compiling source file 'mechamon.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(60,2): error C2923: 'std::vector': 'Mechamon' is not a valid template type argument for parameter '_Ty'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,2): error C2923: 'std::vector': 'Mechamon' is not a valid template type argument for parameter '_Ty'
   (compiling source file 'mechamon.cpp')
-      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(60,9):
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,9):
       see declaration of 'Mechamon'
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(60,2): error C2976: 'std::vector': too few template arguments
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,2): error C2976: 'std::vector': too few template arguments
   (compiling source file 'mechamon.cpp')
       C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vector(459,7):
       see declaration of 'std::vector'
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(60,19): error C3000: 'std::vector': use of class template requires template argument list. Argument deduction is not allowed in non-static data member
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,19): error C3000: 'std::vector': use of class template requires template argument list. Argument deduction is not allowed in non-static data member
   (compiling source file 'mechamon.cpp')
       C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vector(459,7):
       see declaration of 'std::vector'
@@ -330,28 +245,25 @@ C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.
 C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(46,27): error C2065: 'newMechamon': undeclared identifier
   (compiling source file 'mechamon.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,8): error C2065: 'Mechamon': undeclared identifier
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(32,4): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'mechamon.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,17): error C2146: syntax error: missing ';' before identifier 'mechamon'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(49,5): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'mechamon.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,26): error C2143: syntax error: missing ';' before ':'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(57,4): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'mechamon.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,26): error C2143: syntax error: missing ')' before ':'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(65,5): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'mechamon.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,26): error C2059: syntax error: ':'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(68,5): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'mechamon.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,40): error C2059: syntax error: ')'
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(80,7): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'mechamon.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(53,42): error C2143: syntax error: missing ';' before '{'
-  (compiling source file 'mechamon.cpp')
-  
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(54,4): error C2065: 'mechamon': undeclared identifier
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(92,7): error C2065: 'textOutputPtr': undeclared identifier
   (compiling source file 'mechamon.cpp')
   
   Generating Code...

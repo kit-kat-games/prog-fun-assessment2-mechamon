@@ -1,6 +1,10 @@
 #pragma once
 #include "generic_header.h"
-#include "consts.h"
+
+const int IN_TERMINAL_WIDTH = 120;
+const char BORDER_CHAR = '*';
+const int TYPING_INTERVAL = 25;
+const int LINE_LENGTH_LIMIT = IN_TERMINAL_WIDTH - 4;
 
 class TextOutput {
 public:

@@ -1,7 +1,8 @@
 #pragma once
-#include "generic_header.h"
 #include "game_state.h"
 #include "text_output_handler.h"
+#include "text_input_handler.h"
+#include "generic_header.h"
 
-GameState gameState = GameState();
-TextOutput textOutput = TextOutput();
+TextOutput* textOutputPtr;
+TextInput* textInputPtr;

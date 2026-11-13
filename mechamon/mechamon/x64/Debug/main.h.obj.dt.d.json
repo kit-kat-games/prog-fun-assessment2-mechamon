@@ -388,15 +388,14 @@
             "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.h",
             "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\misc_funcs.h",
             "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_output_handler.h",
-            "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\consts.h",
-            "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\operator.h",
+            "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\globals.h",
             "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.h",
+            "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\operator.h",
             "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_input_handler.h",
             "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\ascii.h",
             "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\data.h",
             "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\random.h",
-            "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h",
-            "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\globals.h"
+            "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

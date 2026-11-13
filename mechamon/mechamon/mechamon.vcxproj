@@ -23,12 +23,10 @@
     <ClCompile Include="game_state.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mechamon.cpp" />
-    <ClCompile Include="text_input_handler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ascii.h" />
     <ClInclude Include="battle.h" />
-    <ClInclude Include="consts.h" />
     <ClInclude Include="data.h" />
     <ClInclude Include="game_state.h" />
     <ClInclude Include="generic_header.h" />

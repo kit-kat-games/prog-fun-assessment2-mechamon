@@ -1,6 +1,6 @@
 #pragma once
-#include "generic_header.h"
 #include "operator.h"
+#include "generic_header.h"
 
 enum TurnStage {
 	tSTAGE_OUTOFBATTLE,
@@ -21,34 +21,34 @@ enum BattleStage {
 
 struct GameState {
 public:
-	void setTurnStage(TurnStage newTurnStage) {
+	inline void setTurnStage(TurnStage newTurnStage) {
 		turnStage = newTurnStage;
 	} 
-	void setBattleStage(BattleStage newBattleStage) {
+	inline void setBattleStage(BattleStage newBattleStage) {
 		battleStage = newBattleStage;
 	}
-	TurnStage readTurnStage() {
+	inline TurnStage readTurnStage() {
 		return turnStage;
 	}
-	BattleStage readBattleStage() {
+	inline BattleStage readBattleStage() {
 		return battleStage;
 	}
-	void setPlayer(Operator newPlayer) {
+	inline void setPlayer(Operator newPlayer) {
 		player = newPlayer;
 	}
-	void setOpponent(Operator newOpponent) {
+	inline void setOpponent(Operator newOpponent) {
 		opponent = newOpponent;
 	}
-	Operator* getPlayerPtr() {
+	inline Operator* getPlayerPtr() {
 		return &player;
 	}
-	Operator* getOpponentPtr() {
+	inline Operator* getOpponentPtr() {
 		return &opponent;
 	}
-	string readPlayerName() {
+	inline string readPlayerName() {
 		return player.readName();
 	}
-	string readOpponentName() {
+	inline string readOpponentName() {
 		return opponent.readName();
 	}
 private:
@@ -57,7 +57,6 @@ private:
 	Operator player = Operator();
 	Operator opponent = Operator();
 };
-
 
 // Overloads of 2 functions - allow either an operator object, or a pointer to an operator object to be passed in
 string readCurMechamonName(Operator oper);

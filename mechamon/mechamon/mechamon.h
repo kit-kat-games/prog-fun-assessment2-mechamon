@@ -1,8 +1,8 @@
 #pragma once
-#include "generic_header.h"
 #include "misc_funcs.h"
 #include "text_output_handler.h"
 #include "globals.h"
+#include "generic_header.h"
 
 // Status Flag For A Mechamon Would Be 0b0000'0000'0000'0000'0000
 // Most right is the mask flags for what statuses are active
@@ -14,6 +14,12 @@ const uint8_t STATUS_MASK_SLOWED = 0b0001;
 const uint8_t STATUS_MASK_FROZEN = 0b0010;
 const uint8_t STATUS_MASK_BURNING = 0b0100;
 const uint8_t STATUS_MASK_STRENGTHENED = 0b1000;
+
+struct MechamonConstructor;
+inline MechamonConstructor createMechamonConstructor(string mechamonType, string instanceName = "");
+inline vector<string> getPossibleMechamonTypes();
+inline string getStatusEffectString(uint8_t statusApplyMask);
+inline void displayInfoOfType(string type);
 
 struct Attack {
 	// Constructor Options
@@ -37,15 +43,21 @@ struct Attack {
 		damage = _damage;
 		statusApplyMask = _statusApplyMask;
 	}
+	
 	// Variable Members
 	string name = "";
 	int damage = -1;
 	uint8_t statusApplyMask = STATUS_MASK_CLEAR;
 	
+	//
+	void displayInfo() {
+		textOutputPtr->print("Name: " + name);
+		textOutputPtr->print("DMG: " + to_string(damage));
+		textOutputPtr->print("Status Effect: " + getStatusEffectString(statusApplyMask));
+	}
 };
 
 struct MechamonConstructor {
-public:
 	// Constructor Options
 	MechamonConstructor() {}
 	MechamonConstructor(string _type) {
@@ -70,6 +82,7 @@ public:
 		speed = _speed;
 		attackList = _attackList;
 	}
+	
 	// Variable Members
 	string type = "";
 	string name = "";
@@ -77,10 +90,9 @@ public:
 	int health = -1;
 	int speed = -1;
 	vector<Attack> attackList = {};
-	
 };
 
-class Mechamon {
+struct Mechamon {
 public:
 	// Constructor Options
 	Mechamon() {}
@@ -132,6 +144,12 @@ public:
 			health = maxHealth;
 		}
 	}
+	void displayInfo() {
+		textOutputPtr->print("Type: " + type);
+		textOutputPtr->print("ATK: " + to_string(attack));
+		textOutputPtr->print("HP: " + to_string(health));
+		textOutputPtr->print("SPD: " + to_string(speed));
+	}
 private:
 	// Variable Methods
 	string name = "";
@@ -146,25 +164,17 @@ private:
 
 vector<string> _mechamonTypesList = { "mech1", "mech2", "mech3", "mech4", "mech5", "mech6" };
 map<string, MechamonConstructor> _typeConstructorMap = {
-	{ "mech1", MechamonConstructor("mech1", "", 20, 50, 6, {Attack("Burning Punch", 10, (STATUS_MASK_BURNING | STATUS_MASK_STRENGTHENED))})},
-	{ "mech2", MechamonConstructor("mech2", "", 25, 45, 6)},
-	{ "mech3", MechamonConstructor("mech3", "", 25, 55, 3)},
-	{ "mech4", MechamonConstructor("mech4", "", 10, 80, 3)},
-	{ "mech5", MechamonConstructor("mech5", "", 15, 60, 5)},
-	{ "mech6", MechamonConstructor("mech6", "", 15, 50, 8)},
+	{ "mech1", MechamonConstructor("mech1", "", 20, 50, 6, {Attack("Burning Punch", 10, (STATUS_MASK_BURNING | STATUS_MASK_STRENGTHENED))}) },
+	{ "mech2", MechamonConstructor("mech2", "", 25, 45, 6) },
+	{ "mech3", MechamonConstructor("mech3", "", 25, 55, 3) },
+	{ "mech4", MechamonConstructor("mech4", "", 10, 80, 3) },
+	{ "mech5", MechamonConstructor("mech5", "", 15, 60, 5) },
+	{ "mech6", MechamonConstructor("mech6", "", 15, 50, 8) },
 };
-
-map<uint8_t, string> statusEffectNameMap = {
+map<uint8_t, string> _statusEffectNameMap = {
 	{ STATUS_MASK_CLEAR, "N/A" },
 	{ STATUS_MASK_SLOWED, "Slowed" },
 	{ STATUS_MASK_FROZEN, "Frozen" },
 	{ STATUS_MASK_BURNING, "Burning" },
 	{ STATUS_MASK_STRENGTHENED, "Strengthened" },
 };
-
-MechamonConstructor createMechamonConstructor(string mechamonType, string instanceName = "");
-vector<string> getPossibleMechamonTypes();
-string getStatusEffectString(uint8_t statusApplyMask);
-void displayInfoOfType(string type);
-void displayInfoOfMechamon(Mechamon* mechamonPtr);
-void displayInfoOfAttack(Attack attack);

@@ -5,6 +5,7 @@
         "ProvidedModule": "",
         "Includes": [
             "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.h",
+            "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\operator.h",
             "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\generic_header.h",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\iostream",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\yvals_core.h",
@@ -386,12 +387,11 @@
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\algorithm",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_heap_algorithms.hpp",
             "c:\\program files\\microsoft visual studio\\18\\community\\vc\\tools\\msvc\\14.51.36231\\include\\__msvc_minmax.hpp",
-            "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\operator.h",
             "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.h",
             "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\misc_funcs.h",
             "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_output_handler.h",
-            "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\consts.h",
-            "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\globals.h"
+            "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\globals.h",
+            "c:\\users\\evely\\gdgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_input_handler.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

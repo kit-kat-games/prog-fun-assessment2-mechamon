@@ -3,7 +3,6 @@
 #include "mechamon.h"
 #include "operator.h"
 #include "text_output_handler.h"
-#include "consts.h"
 #include "game_state.h"
 #include "text_input_handler.h"
 #include "ascii.h"
@@ -11,3 +10,5 @@
 #include "random.h"
 #include "battle.h"
 #include "globals.h"
+
+GameState gameState;

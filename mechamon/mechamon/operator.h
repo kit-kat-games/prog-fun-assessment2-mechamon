@@ -1,10 +1,10 @@
 #pragma once
 #include "generic_header.h"
 #include "mechamon.h"
-#include "consts.h"
 #include "text_output_handler.h"
 #include "globals.h"
 
+const uint8_t MECHAMON_LIMIT = 3;
 const uint8_t OPERATOR_FLAG_RAN = 0b0001;
 
 class Operator {
@@ -50,9 +50,10 @@ public:
 		}
 	}
 	void healAllMechamons() {
-		for (Mechamon mechamon : mechamonList) {
+		// aaahhh
+		/*for (Mechamon mechamon : mechamonList) {
 			mechamon.healDamage();
-		}
+		}*/
 	}
 private:
 	// Variable Methods

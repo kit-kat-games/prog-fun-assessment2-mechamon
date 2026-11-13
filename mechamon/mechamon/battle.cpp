@@ -45,36 +45,36 @@ int getPriorityOfAction(Action action) {
 }
 
 void _resolveViewInfo(GameState* gameStatePtr) {
-	textOutput.printEmptyLine();
-	textOutput.print("Please choose what you wish to view information on. Enter the character next to the choice you wish to view info on.");
-	textOutput.print("View Player Mechamon info [P]");
-	textOutput.print("View Opponent Mechamon info [O]");
-	textOutput.print("View a list of your Mechamons [M]");
-	textOutput.print("View a list of your Attacks [A]");
-	textOutput.print("View a list of your Items [I]");
-	string input = getUserMultipleChoiceInput({ "P", "O", "M", "A", "I" }, "Enter the character next to the choice you wish to view info on.");
-	textOutput.printEmptyLine();
+	textOutputPtr->printEmptyLine();
+	textOutputPtr->print("Please choose what you wish to view information on. Enter the character next to the choice you wish to view info on.");
+	textOutputPtr->print("View Player Mechamon info [P]");
+	textOutputPtr->print("View Opponent Mechamon info [O]");
+	textOutputPtr->print("View a list of your Mechamons [M]");
+	textOutputPtr->print("View a list of your Attacks [A]");
+	textOutputPtr->print("View a list of your Items [I]");
+	string input = textInputPtr->getUserMultipleChoiceInput({ "P", "O", "M", "A", "I" }, "Enter the character next to the choice you wish to view info on.");
+	textOutputPtr->printEmptyLine();
 
 	if (stringsEqualCaseInsensitive(input, "P")) {
-		displayInfoOfMechamon(gameStatePtr->getPlayerPtr()->getCurrentMechamonPtr());
+		gameStatePtr->getPlayerPtr()->getCurrentMechamonPtr()->displayInfo();
 	}
 	else if (stringsEqualCaseInsensitive(input, "O")) {
-		displayInfoOfMechamon(gameStatePtr->getOpponentPtr()->getCurrentMechamonPtr());
+		gameStatePtr->getOpponentPtr()->getCurrentMechamonPtr()->displayInfo();
 	}
 	else if (stringsEqualCaseInsensitive(input, "M")) {
-		textOutput.print("Your Mechamon:");
+		textOutputPtr->print("Your Mechamon:");
 		vector<Mechamon>* mechamonListPtr = gameStatePtr->getPlayerPtr()->getMechamonListPtr();
 		for (Mechamon mechamon : *mechamonListPtr) {
-			textOutput.print(mechamon.readName());
+			textOutputPtr->print(mechamon.readName());
 		}
 	}
 	else if (stringsEqualCaseInsensitive(input, "A")) {
 		vector<Attack>* attackListPtr = gameStatePtr->getPlayerPtr()->getCurrentMechamonPtr()->getAttackListPtr();
 		for (int i = 0; i < attackListPtr->size(); i++) {
 			vector<Attack> attackList = *attackListPtr;
-			displayInfoOfAttack(attackList[i]);
+			attackList[i].displayInfo();
 			if (i != attackList.size() - 1) {
-				textOutput.printEmptyLine();
+				textOutputPtr->printEmptyLine();
 			}
 		}
 	}
@@ -82,7 +82,7 @@ void _resolveViewInfo(GameState* gameStatePtr) {
 
 	}
 
-	textOutput.printEmptyLine();
+	textOutputPtr->printEmptyLine();
 }
 
 void resolveActionSelection(Action* pActionPtr, Action* oActionPtr, GameState* gameStatePtr) {
@@ -92,7 +92,7 @@ void resolveActionSelection(Action* pActionPtr, Action* oActionPtr, GameState* g
 
 	while (true) {
 		// Player chooses an action to do
-		string input = getUserMultipleChoiceInput(playerActions, ("Please choose what you wish to do this turn, enter the character next to the choice you wish to make. " +
+		string input = textInputPtr->getUserMultipleChoiceInput(playerActions, ("Please choose what you wish to do this turn, enter the character next to the choice you wish to make. " +
 			actionChoicesDisplayString + ", VIEW INFO [?]"));
 		if (input != "?") {
 			*pActionPtr = _getActionOfInput(input);
@@ -107,7 +107,7 @@ void resolveActionSelection(Action* pActionPtr, Action* oActionPtr, GameState* g
 	shuffle(possibleActions.begin(), possibleActions.end(), rng);
 	*oActionPtr = _getActionOfInput(possibleActions[0]);
 
-	textOutput.printEmptyLine();
+	textOutputPtr->printEmptyLine();
 }
 
 void _resolveAttackAction(Operator* userPtr, Operator* targetPtr) {
@@ -116,19 +116,19 @@ void _resolveAttackAction(Operator* userPtr, Operator* targetPtr) {
 	string userMechName = readCurMechamonName(userPtr);
 	string targMechName = readCurMechamonName(targetPtr);
 
-	textOutput.print(userName + "'s mechamon " + userMechName + " attacks!");
+	textOutputPtr->print(userName + "'s mechamon " + userMechName + " attacks!");
 
 	int dmg = userPtr->getCurrentMechamonPtr()->readAttack();
 	targetPtr->getCurrentMechamonPtr()->dealDamage(dmg);
 
-	textOutput.print(userMechName + " deals " + to_string(dmg) + " damage to " + targMechName + ".");
+	textOutputPtr->print(userMechName + " deals " + to_string(dmg) + " damage to " + targMechName + ".");
 
 	int hp = targetPtr->getCurrentMechamonPtr()->readHealth();
 	if (!targetPtr->getCurrentMechamonPtr()->isDead()) {
-		textOutput.print(targMechName + " is now at " + to_string(hp) + "HP.");
+		textOutputPtr->print(targMechName + " is now at " + to_string(hp) + "HP.");
 	}
 	else {
-		textOutput.print(targMechName + " faints!");
+		textOutputPtr->print(targMechName + " faints!");
 	}
 }
 
@@ -138,13 +138,13 @@ void resolveAction(Action action, Operator* userPtr, Operator* targetPtr, GameSt
 		_resolveAttackAction(userPtr, targetPtr);
 		break;
 	case ACTION_ITEM:
-		textOutput.print(userPtr->readName() + " uses an item!");
+		textOutputPtr->print(userPtr->readName() + " uses an item!");
 		break;
 	case ACTION_SWAP:
-		textOutput.print(userPtr->readName() + " swaps mechamons!");
+		textOutputPtr->print(userPtr->readName() + " swaps mechamons!");
 		break;
 	case ACTION_RUN:
-		textOutput.print(userPtr->readName() + " runs... boo!");
+		textOutputPtr->print(userPtr->readName() + " runs... boo!");
 		userPtr->setRanFromBattle(true);
 		gameStatePtr->setBattleStage(bSTAGE_BATTLERESULT);
 		gameStatePtr->setTurnStage(tSTAGE_OUTOFBATTLE);

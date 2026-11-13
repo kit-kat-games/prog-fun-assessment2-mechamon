@@ -1,10 +1,10 @@
 #pragma once
-#include "generic_header.h"
 #include "misc_funcs.h"
 #include "game_state.h"
 #include "mechamon.h"
 #include "text_input_handler.h"
 #include "random.h"
+#include "generic_header.h"
 
 const uint8_t ITEM_ACTION_PRIORITY = 3;
 const uint8_t RUN_ACTION_PRIORITY = 9;
