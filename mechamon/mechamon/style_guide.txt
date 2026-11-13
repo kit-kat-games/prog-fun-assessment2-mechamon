@@ -1,0 +1,25 @@
+Structs/Classes:
+	PascalCase for names
+
+Functions/Methods in Structs/Classes:
+	camelCase for names
+	_camelCase for private methods in Structs/Classes, and for intended private functions in files (functions not intended to be used outside the file it is defined in)
+
+Enums:
+	PascalCase for names
+	Enum values are written after their Enum name (or a shorten of it) - Example, for Enum Action, Enum values would be ACTION_SWAP
+	lowercase followed by CAPS_LOCK_SNAKE_CASE for Enum values - Example, for Enum BattleStage, Enum values would be bSTAGE_BATTLESETUP
+
+Variables/Parameters:
+	camelCase
+	_camelCase for parameters in Struct/Class constructors for assigning values - Example, for class variable health, the constructor parameter would be _health
+	_camelCase for intended private variables in files (variables not intended to be used outside the file it is defined in)
+
+Pointers:
+	typenamePtr / variablenamePtr for pointers to objects of either the typename or a pointer to the variable
+
+Constants:
+	CAPS_LOCK_SNAKE_CASE for names
+
+Files:
+	snake_case for names

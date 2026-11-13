@@ -19,23 +19,28 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="battle.cpp" />
+    <ClCompile Include="game_state.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mechamon.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ascii.h" />
     <ClInclude Include="battle.h" />
-    <ClInclude Include="consts.h" />
     <ClInclude Include="data.h" />
     <ClInclude Include="game_state.h" />
     <ClInclude Include="generic_header.h" />
-    <ClInclude Include="includes.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="main.h" />
     <ClInclude Include="mechamon.h" />
     <ClInclude Include="misc_funcs.h" />
     <ClInclude Include="operator.h" />
     <ClInclude Include="random.h" />
     <ClInclude Include="text_output_handler.h" />
-    <ClInclude Include="prepared_text_outputs.h" />
     <ClInclude Include="text_input_handler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="style_guide.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>

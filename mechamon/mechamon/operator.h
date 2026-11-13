@@ -1,16 +1,21 @@
 #pragma once
 #include "generic_header.h"
 #include "mechamon.h"
-#include "consts.h"
 #include "text_output_handler.h"
+#include "globals.h"
 
+const uint8_t MECHAMON_LIMIT = 3;
 const uint8_t OPERATOR_FLAG_RAN = 0b0001;
 
-struct Operator {
+class Operator {
 public:
+	// Constructor Options
+	Operator() {}
 	Operator(string _name) {
 		name = _name;
 	}
+
+	// Set/Read/Get Methods
 	void setName(string newName) {
 		name = newName;
 	}
@@ -23,13 +28,8 @@ public:
 	vector<Mechamon>* getMechamonListPtr() {
 		return &mechamonList;
 	}
-	void addMechamonToList(Mechamon newMechamon, uint8_t mechamonLimit = MECHAMON_LIMIT) {
-		if (mechamonList.size() < mechamonLimit) {
-			mechamonList.push_back(newMechamon);
-		}
-		if (mechamonList.size() == 1) {
-			curMechamonIndex = 0;
-		}
+	bool readRanFromBattle() {
+		return (statusFlags & OPERATOR_FLAG_RAN);
 	}
 	void setRanFromBattle(bool ran) {
 		if (ran) {
@@ -39,15 +39,24 @@ public:
 			statusFlags = statusFlags & ~OPERATOR_FLAG_RAN;
 		}
 	}
-	bool readRanFromBattle() {
-		return (statusFlags & OPERATOR_FLAG_RAN);
-	}
-	void healAllMechamons() {
-		for (Mechamon mechamon : mechamonList) {
-			mechamon.healDamage();
+	
+	// Logic Methods
+	void addMechamonToList(Mechamon newMechamon, uint8_t mechamonLimit = MECHAMON_LIMIT) {
+		if (mechamonList.size() < mechamonLimit) {
+			mechamonList.push_back(newMechamon);
+		}
+		if (mechamonList.size() == 1) {
+			curMechamonIndex = 0;
 		}
 	}
+	void healAllMechamons() {
+		// aaahhh
+		/*for (Mechamon mechamon : mechamonList) {
+			mechamon.healDamage();
+		}*/
+	}
 private:
+	// Variable Methods
 	string name;
 	vector<Mechamon> mechamonList = {};
 	int curMechamonIndex = -1;

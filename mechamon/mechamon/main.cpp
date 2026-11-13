@@ -1,6 +1,13 @@
-#include "includes.h"
+#pragma once
+#include "main.h"
 
-GameState gameState;
+void printOpeningHeader() {
+    textOutputPtr->printBorderLine();
+    textOutputPtr->printEmptyLine();
+    textOutputPtr->printCentered("Welcome to the Mechamon monster battle simulation!");
+    textOutputPtr->printEmptyLine();
+    textOutputPtr->printBorderLine();
+}
 
 string getPlayerMechamonChoice() {
     // Get Possible Mechamon Choices
@@ -28,39 +35,39 @@ string getPlayerMechamonChoice() {
     possibleInputsWithInfoChoice.push_back("INFO");
     while (true) {
         // INSERT A WAY TO VIEW DATA OF MECHAMON BEING CHOSEN 
-        choice = getUserMultipleChoiceInput(possibleInputsWithInfoChoice, ("Please enter the number next to the mechamon you wish to choose: " + choiceDisplayString + ". Enter 'INFO' to see information about the choices."));
+        choice = textInputPtr->getUserMultipleChoiceInput(possibleInputsWithInfoChoice, ("Please enter the number next to the mechamon you wish to choose: " + choiceDisplayString + ". Enter 'INFO' to see information about the choices."));
         if (!stringsEqualCaseInsensitive(choice, "INFO")) {
             // If not asking for info, a mechamon has been chosen
             break;
         }
-        printEmptyLine();
-        string infoChoice = getUserMultipleChoiceInput(possibleInputs, ("Please enter the number next to the mechamon you wish to view information about: " + choiceDisplayString + "."));
-        printEmptyLine();
+        textOutputPtr->printEmptyLine();
+        string infoChoice = textInputPtr->getUserMultipleChoiceInput(possibleInputs, ("Please enter the number next to the mechamon you wish to view information about: " + choiceDisplayString + "."));
+        textOutputPtr->printEmptyLine();
         displayInfoOfType(mechamonMap[infoChoice]);
-        printEmptyLine();
+        textOutputPtr->printEmptyLine();
     }
     return mechamonMap[choice];
 }
 
 bool createPlayer() {
-    print("Time to create your operator!");
+    textOutputPtr->print("Time to create your operator!");
 
     // Prompt player for their choice of name
-    string oName = getUserStringInput("Please enter your operator's name. Enter 'RANDOM' for a random name instead: ");
+    string oName = textInputPtr->getUserStringInput("Please enter your operator's name. Enter 'RANDOM' for a random name instead: ");
     if (stringsEqualCaseInsensitive(oName, "RANDOM")) {
         vector<string> tempNames = VALID_OPERATOR_NAMES;
         shuffle(tempNames.begin(), tempNames.end(), rng);
         oName = tempNames[0];
     }
     Operator player = Operator(oName);
-    print("Your operator's name is " + player.readName() + ".");
+    textOutputPtr->print("Your operator's name is " + player.readName() + ".");
 
-    printBorderLine();
+    textOutputPtr->printBorderLine();
 
     // Prompt player for their choice of mechamon, and assigning it its name
-    print("Time to create your mechamon!");
+    textOutputPtr->print("Time to create your mechamon!");
     string mType = getPlayerMechamonChoice();
-    string mName = getUserStringInput("Please enter your mechamon's name. Enter 'RANDOM' for a random name instead: ");
+    string mName = textInputPtr->getUserStringInput("Please enter your mechamon's name. Enter 'RANDOM' for a random name instead: ");
 
     // If prompted, randomly select a name instead
     if (stringsEqualCaseInsensitive(mName, "RANDOM")) {
@@ -77,21 +84,21 @@ bool createPlayer() {
     player.addMechamonToList(mechamon);
     gameState.setPlayer(player);
 
-    printBorderLine();
-    print("Your operator's name is " + player.readName() + ", and your mechamon's name is " + readCurMechamonName(player) +
+    textOutputPtr->printBorderLine();
+    textOutputPtr->print("Your operator's name is " + player.readName() + ", and your mechamon's name is " + readCurMechamonName(player) +
         " of type " + readCurMechamonType(player) + ". Is this what you wish to play with? ");
 
     // Prompt user for whether they wish to create a new player or use the created one
-    string choice = getUserMultipleChoiceInput({ "Y", "N" }, "Enter Y or N: ");
+    string choice = textInputPtr->getUserMultipleChoiceInput({ "Y", "N" }, "Enter Y or N: ");
     if (stringsEqualCaseInsensitive(choice, "Y")) {
-        print("Player setup confirmed.");
+        textOutputPtr->print("Player setup confirmed.");
     }
     else if (stringsEqualCaseInsensitive(choice, "N")) {
-        print("Resetting player, please create a new one.");
-        printBorderLine();
+        textOutputPtr->print("Resetting player, please create a new one.");
+        textOutputPtr->printBorderLine();
         return false;
     }
-    printBorderLine();
+    textOutputPtr->printBorderLine();
     return true;
 }
 
@@ -135,8 +142,8 @@ void resolveBattle() {
         }
         switch (gameState.readTurnStage()) {
         case tSTAGE_OUTOFBATTLE:
-            printCentered("Battle Started!");
-            printBorderLine();
+            textOutputPtr->printCentered("Battle Started!");
+            textOutputPtr->printBorderLine();
             gameState.setTurnStage(tSTAGE_TURNSTART);
             break;
         case tSTAGE_TURNSTART:
@@ -189,16 +196,16 @@ void resolveBattle() {
 
             if (playerFirst) {
                 resolveAction(pAction, gameState.getPlayerPtr(), gameState.getOpponentPtr(), &gameState);
-                printEmptyLine();
+                textOutputPtr->printEmptyLine();
                 resolveAction(oAction, gameState.getOpponentPtr(), gameState.getPlayerPtr(), &gameState);
             }
             else {
                 resolveAction(oAction, gameState.getOpponentPtr(), gameState.getPlayerPtr(), &gameState);
-                printEmptyLine();
+                textOutputPtr->printEmptyLine();
                 resolveAction(pAction, gameState.getPlayerPtr(), gameState.getOpponentPtr(), &gameState);
             }
 
-            printEmptyLine();
+            textOutputPtr->printEmptyLine();
             gameState.setTurnStage(tSTAGE_TURNEND);
             break;
         case tSTAGE_TURNEND:
@@ -221,30 +228,30 @@ BattleStage resolveBattleResult() {
 
     // If either the player beat all of the opponent's mechamons, or either player ran, allow for either ending the game or finding a new battle
     if (gameState.getOpponentPtr()->getCurrentMechamonPtr()->isDead()) {
-        print("You beat " + gameState.readOpponentName() + "!");
+        textOutputPtr->print("You beat " + gameState.readOpponentName() + "!");
     }
     else if (gameState.getPlayerPtr()->readRanFromBattle()) {
-        print("You ran... boo!");
+        textOutputPtr->print("You ran... boo!");
     }
     else if (gameState.getOpponentPtr()->readRanFromBattle()) {
-        print(gameState.readOpponentName() + " ran! Good job scaring them off.");
+        textOutputPtr->print(gameState.readOpponentName() + " ran! Good job scaring them off.");
     }
 
     // Have player decide whether to end the game or find another battle
-    string choice = getUserMultipleChoiceInput({ "Y", "N" }, "Would you like to find another battle? Enter Y or N: ");
+    string choice = textInputPtr->getUserMultipleChoiceInput({ "Y", "N" }, "Would you like to find another battle? Enter Y or N: ");
     if (stringsEqualCaseInsensitive(choice, "N")) {
-        print("Ending Current Game.");
-        printBorderLine();
+        textOutputPtr->print("Ending Current Game.");
+        textOutputPtr->printBorderLine();
         return bSTAGE_GAMERESULT;
     }
-    print("Healing your mechamons, finding you another opponent.");
+    textOutputPtr->print("Healing your mechamons, finding you another opponent.");
     gameState.getPlayerPtr()->healAllMechamons();
-    printBorderLine();
+    textOutputPtr->printBorderLine();
     return bSTAGE_BATTLESETUP;
 }
 
 bool resolveGameResult() {
-    string choice = getUserMultipleChoiceInput({ "Y", "N" }, "Would you like to play again? Enter Y or N: ");
+    string choice = textInputPtr->getUserMultipleChoiceInput({ "Y", "N" }, "Would you like to play again? Enter Y or N: ");
     if (stringsEqualCaseInsensitive(choice, "Y")) {
         return true;
     }
@@ -253,6 +260,12 @@ bool resolveGameResult() {
 
 int main()
 {
+    TextOutput textOutput;
+    textOutputPtr = &textOutput;
+
+    TextInput textInput;
+    textInputPtr = &textInput;
+
     printOpeningHeader();
 
     // Booleans for gameplay loop
@@ -272,9 +285,9 @@ int main()
         case bSTAGE_BATTLESETUP:
             // Create a new opponent
             createOpponent();
-            print("Your opponent is " + gameState.readOpponentName() + ". Their mechamon's name is " + readCurMechamonName(gameState.getOpponentPtr()) +
+            textOutputPtr->print("Your opponent is " + gameState.readOpponentName() + ". Their mechamon's name is " + readCurMechamonName(gameState.getOpponentPtr()) +
                 " of type " + readCurMechamonType(gameState.getOpponentPtr()) + ".");
-            printBorderLine();
+            textOutputPtr->printBorderLine();
             gameState.setBattleStage(bSTAGE_INBATTLE);
             break;
         case bSTAGE_INBATTLE:
@@ -286,12 +299,12 @@ int main()
             break;
         case bSTAGE_GAMERESULT:
             if (!resolveGameResult()) {
-                print("Application Closing. Thank you for playing!");
+                textOutputPtr->print("Application Closing. Thank you for playing!");
                 gameRunning = false;
             }
             else {
-                print("Starting Setup for new Game.");
-                printBorderLine();
+                textOutputPtr->print("Starting Setup for new Game.");
+                textOutputPtr->printBorderLine();
                 createdPlayer = false;
                 gameState.setBattleStage(bSTAGE_GAMESETUP);
             }

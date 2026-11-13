@@ -1,12 +1,269 @@
-﻿  main.cpp
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(50,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+﻿  battle.cpp
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(35,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'battle.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(76,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'battle.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(124,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'battle.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(32,4): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'battle.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(49,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'battle.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(57,4): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'battle.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(65,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'battle.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(68,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'battle.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(80,7): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'battle.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(92,7): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'battle.cpp')
+  
+  game_state.cpp
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(35,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(76,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(124,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(32,4): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(49,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(57,4): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(65,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(68,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(80,7): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'game_state.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(92,7): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'game_state.cpp')
+  
+  main.cpp
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(35,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(112,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(76,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(157,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(124,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'main.cpp')
   
-C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\battle.h(67,1): warning C4715: 'getPriorityOfAction': not all control paths return a value
-  mechamon.vcxproj -> C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\x64\Debug\mechamon.exe
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(25,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(25,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(25,36): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(28,9): error C2065: 'Mechamon': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(28,2): error C2923: 'std::vector': 'Mechamon' is not a valid template type argument for parameter '_Ty'
+  (compiling source file 'main.cpp')
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(28,9):
+      see declaration of 'Mechamon'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(28,2): error C2976: 'std::vector': too few template arguments
+  (compiling source file 'main.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vector(459,7):
+      see declaration of 'std::vector'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(28,20): error C2955: 'std::vector': use of class template requires template argument list
+  (compiling source file 'main.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vector(459,7):
+      see declaration of 'std::vector'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(44,25): error C2061: syntax error: identifier 'Mechamon'
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,9): error C2065: 'Mechamon': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,2): error C2923: 'std::vector': 'Mechamon' is not a valid template type argument for parameter '_Ty'
+  (compiling source file 'main.cpp')
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,9):
+      see declaration of 'Mechamon'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,2): error C2976: 'std::vector': too few template arguments
+  (compiling source file 'main.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vector(459,7):
+      see declaration of 'std::vector'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,19): error C3000: 'std::vector': use of class template requires template argument list. Argument deduction is not allowed in non-static data member
+  (compiling source file 'main.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vector(459,7):
+      see declaration of 'std::vector'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(45,29): error C2065: 'mechamonLimit': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(46,27): error C2065: 'newMechamon': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(32,4): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(49,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(57,4): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(65,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(68,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(80,7): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(92,7): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'main.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\main.cpp(84,12): error C2660: 'Operator::addMechamonToList': function does not take 1 arguments
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(44,7):
+      see declaration of 'Operator::addMechamonToList'
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\main.cpp(84,12):
+      while trying to match the argument list '(Mechamon)'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\main.cpp(128,14): error C2660: 'Operator::addMechamonToList': function does not take 1 arguments
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(44,7):
+      see declaration of 'Operator::addMechamonToList'
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\main.cpp(128,14):
+      while trying to match the argument list '(Mechamon)'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\main.cpp(162,55): error C2039: 'getCurrentMechamonPtr': is not a member of 'Operator'
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(10,7):
+      see declaration of 'Operator'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\main.cpp(168,57): error C2039: 'getCurrentMechamonPtr': is not a member of 'Operator'
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(10,7):
+      see declaration of 'Operator'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\main.cpp(212,43): error C2039: 'getCurrentMechamonPtr': is not a member of 'Operator'
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(10,7):
+      see declaration of 'Operator'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\main.cpp(212,108): error C2039: 'getCurrentMechamonPtr': is not a member of 'Operator'
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(10,7):
+      see declaration of 'Operator'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\main.cpp(225,35): error C2039: 'getCurrentMechamonPtr': is not a member of 'Operator'
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(10,7):
+      see declaration of 'Operator'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\main.cpp(230,37): error C2039: 'getCurrentMechamonPtr': is not a member of 'Operator'
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(10,7):
+      see declaration of 'Operator'
+  
+  mechamon.cpp
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(35,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(76,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_output_handler.h(124,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(25,10): error C2143: syntax error: missing ';' before '*'
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(25,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(25,36): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(28,9): error C2065: 'Mechamon': undeclared identifier
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(28,2): error C2923: 'std::vector': 'Mechamon' is not a valid template type argument for parameter '_Ty'
+  (compiling source file 'mechamon.cpp')
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(28,9):
+      see declaration of 'Mechamon'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(28,2): error C2976: 'std::vector': too few template arguments
+  (compiling source file 'mechamon.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vector(459,7):
+      see declaration of 'std::vector'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(28,20): error C2955: 'std::vector': use of class template requires template argument list
+  (compiling source file 'mechamon.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vector(459,7):
+      see declaration of 'std::vector'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(44,25): error C2061: syntax error: identifier 'Mechamon'
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,9): error C2065: 'Mechamon': undeclared identifier
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,2): error C2923: 'std::vector': 'Mechamon' is not a valid template type argument for parameter '_Ty'
+  (compiling source file 'mechamon.cpp')
+      C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,9):
+      see declaration of 'Mechamon'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,2): error C2976: 'std::vector': too few template arguments
+  (compiling source file 'mechamon.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vector(459,7):
+      see declaration of 'std::vector'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(61,19): error C3000: 'std::vector': use of class template requires template argument list. Argument deduction is not allowed in non-static data member
+  (compiling source file 'mechamon.cpp')
+      C:\Program Files\Microsoft Visual Studio\18\Community\VC\Tools\MSVC\14.51.36231\include\vector(459,7):
+      see declaration of 'std::vector'
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(45,29): error C2065: 'mechamonLimit': undeclared identifier
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\operator.h(46,27): error C2065: 'newMechamon': undeclared identifier
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(32,4): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(49,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(57,4): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(65,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(68,5): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(80,7): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'mechamon.cpp')
+  
+C:\Users\evely\GDgames\prog-fun-assessment2-mechamon\mechamon\mechamon\text_input_handler.h(92,7): error C2065: 'textOutputPtr': undeclared identifier
+  (compiling source file 'mechamon.cpp')
+  
+  Generating Code...
