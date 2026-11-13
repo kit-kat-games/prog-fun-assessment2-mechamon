@@ -1,5 +1,5 @@
 #pragma once
-#include "generic_header.h"
+using namespace std;
 
 template <typename S, typename A>
 bool isWithin(S searching, A structure) {

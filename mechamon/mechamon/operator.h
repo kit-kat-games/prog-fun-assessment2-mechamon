@@ -1,10 +1,9 @@
 #pragma once
-#include "generic_header.h"
+#include <vector>
 #include "mechamon.h"
-#include "text_output_handler.h"
-#include "globals.h"
+using namespace std;
 
-const uint8_t MECHAMON_LIMIT = 3;
+const int MECHAMON_LIMIT = 3;
 const uint8_t OPERATOR_FLAG_RAN = 0b0001;
 
 class Operator {
@@ -33,15 +32,15 @@ public:
 	}
 	void setRanFromBattle(bool ran) {
 		if (ran) {
-			statusFlags = statusFlags | OPERATOR_FLAG_RAN;
+			statusFlags = (statusFlags | OPERATOR_FLAG_RAN);
 		}
 		else {
-			statusFlags = statusFlags & ~OPERATOR_FLAG_RAN;
+			statusFlags = (statusFlags & ~OPERATOR_FLAG_RAN);
 		}
 	}
 	
 	// Logic Methods
-	void addMechamonToList(Mechamon newMechamon, uint8_t mechamonLimit = MECHAMON_LIMIT) {
+	void addMechamonToList(Mechamon newMechamon, int mechamonLimit = MECHAMON_LIMIT) {
 		if (mechamonList.size() < mechamonLimit) {
 			mechamonList.push_back(newMechamon);
 		}
@@ -50,10 +49,9 @@ public:
 		}
 	}
 	void healAllMechamons() {
-		// aaahhh
-		/*for (Mechamon mechamon : mechamonList) {
+		for (Mechamon mechamon : mechamonList) {
 			mechamon.healDamage();
-		}*/
+		}
 	}
 private:
 	// Variable Methods

@@ -53,7 +53,7 @@ bool createPlayer() {
     textOutputPtr->print("Time to create your operator!");
 
     // Prompt player for their choice of name
-    string oName = textInputPtr->getUserStringInput("Please enter your operator's name. Enter 'RANDOM' for a random name instead: ");
+    string oName = textInputPtr->getUserInput("Please enter your operator's name. Enter 'RANDOM' for a random name instead: ");
     if (stringsEqualCaseInsensitive(oName, "RANDOM")) {
         vector<string> tempNames = VALID_OPERATOR_NAMES;
         shuffle(tempNames.begin(), tempNames.end(), rng);
@@ -67,7 +67,7 @@ bool createPlayer() {
     // Prompt player for their choice of mechamon, and assigning it its name
     textOutputPtr->print("Time to create your mechamon!");
     string mType = getPlayerMechamonChoice();
-    string mName = textInputPtr->getUserStringInput("Please enter your mechamon's name. Enter 'RANDOM' for a random name instead: ");
+    string mName = textInputPtr->getUserInput("Please enter your mechamon's name. Enter 'RANDOM' for a random name instead: ");
 
     // If prompted, randomly select a name instead
     if (stringsEqualCaseInsensitive(mName, "RANDOM")) {
@@ -170,7 +170,6 @@ void resolveBattle() {
             else {
                 oPriority = getPriorityOfAction(oAction);
             }
-
             gameState.setTurnStage(tSTAGE_PROCESSACTION);
             break;
         case tSTAGE_PROCESSACTION:

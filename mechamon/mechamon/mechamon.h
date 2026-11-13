@@ -1,8 +1,8 @@
 #pragma once
-#include "misc_funcs.h"
-#include "text_output_handler.h"
+#include <vector>
+#include <map>
 #include "globals.h"
-#include "generic_header.h"
+using namespace std;
 
 // Status Flag For A Mechamon Would Be 0b0000'0000'0000'0000'0000
 // Most right is the mask flags for what statuses are active

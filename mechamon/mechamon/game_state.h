@@ -1,6 +1,6 @@
 #pragma once
 #include "operator.h"
-#include "generic_header.h"
+using namespace std;
 
 enum TurnStage {
 	tSTAGE_OUTOFBATTLE,

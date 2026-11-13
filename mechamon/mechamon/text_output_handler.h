@@ -1,5 +1,11 @@
 #pragma once
-#include "generic_header.h"
+#include <iostream>
+#include <string>
+#include <windows.h>
+#include <vector>
+#include <thread>
+#include <chrono>
+using namespace std;
 
 const int IN_TERMINAL_WIDTH = 120;
 const char BORDER_CHAR = '*';
@@ -91,15 +97,6 @@ public:
 			}
 		}
 	}
-private:
-	static bool allowColoredBorder;
-
-	// Stack Overflow did help in finding the correct api to use, as well as the general syntax for storing attributes and returning to the default.
-	static HANDLE hConsole;
-	static CONSOLE_SCREEN_BUFFER_INFO consoleInfo;
-	static WORD default_attributes;
-	static int curTextColor;
-
 	static inline void setTextColor(int newColor) {
 		SetConsoleTextAttribute(hConsole, newColor);
 		curTextColor = newColor;
@@ -110,6 +107,15 @@ private:
 		curTextColor = -1;
 		return curColor;
 	}
+private:
+	static bool allowColoredBorder;
+
+	// Stack Overflow did help in finding the correct api to use, as well as the general syntax for storing attributes and returning to the default.
+	static HANDLE hConsole;
+	static CONSOLE_SCREEN_BUFFER_INFO consoleInfo;
+	static WORD default_attributes;
+	static int curTextColor;
+
 	static inline void _printLeftBorder() {
 		if (allowColoredBorder) {
 			cout << BORDER_CHAR << " ";

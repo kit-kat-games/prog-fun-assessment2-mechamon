@@ -1,12 +1,12 @@
 #pragma once
-#include "generic_header.h"
-#include "text_output_handler.h"
 #include "misc_funcs.h"
 #include "globals.h"
+#include <vector>
+using namespace std;
 
 class TextInput {
 public:
-	static inline string getUserStringInput(string inputRequest = "", bool mustHaveCharacters = true, bool mustHaveAlpha = false) {
+	static inline string getUserInput(string inputRequest = "", bool mustHaveCharacters = true, bool mustHaveAlpha = false) {
 		_printInputField(inputRequest);
 		string input = _getLineStringInput(inputRequest, mustHaveCharacters, mustHaveAlpha);
 		string lineContents = input + inputRequest;
@@ -32,7 +32,7 @@ public:
 			textOutputPtr->print(inputRequest);
 		}
 		while (true) {
-			string input = getUserStringInput("Please enter your choice of option: ");
+			string input = getUserInput("Please enter your choice of option: ");
 			string casedInput = input;
 			if (!caseMatters) {
 				string temp = input;

@@ -1,5 +1,5 @@
 #pragma once
-#include "generic_header.h"
+#include <random>
 
 random_device rd;
 mt19937 rng{ rd() };

@@ -1,5 +1,9 @@
 #pragma once
+#include <random>
+#include <algorithm>
 #include "battle.h"
+#include "misc_funcs.h"
+#include "globals.h"
 
 vector<string> getPossibleActionInputs() {
 	vector<string> result;

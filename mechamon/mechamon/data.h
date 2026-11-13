@@ -1,5 +1,6 @@
 #pragma once
-#include "generic_header.h"
+#include <vector>
+using namespace std;
 
 const vector<string> VALID_OPERATOR_NAMES = {
 	"Jaelynn", "Alonso", "Mina", "Morgan", "Brooks", "Wynter", "Kaleb", "Foster", "Ezekiel", "Mira",
