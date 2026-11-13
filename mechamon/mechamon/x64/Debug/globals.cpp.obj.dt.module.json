@@ -5,8 +5,8 @@
         {
             "primary-output": "x64\\Debug\\globals.obj",
             "outputs": [
-                "x64\\Debug\\globals.h.obj.dt.module.json",
-                "x64\\Debug\\globals.h.obj.dt.d.json"
+                "x64\\Debug\\globals.cpp.obj.dt.module.json",
+                "x64\\Debug\\globals.cpp.obj.dt.d.json"
             ],
             "requires": []
         }

@@ -29,10 +29,12 @@
     <ClInclude Include="battle.h" />
     <ClInclude Include="data.h" />
     <ClInclude Include="game_state.h" />
-    <ClInclude Include="generic_header.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="mechamon.h" />
+    <ClInclude Include="mechamon_classes.h" />
+    <ClInclude Include="mechamon_data.h" />
+    <ClInclude Include="mechamon_funcs.h" />
     <ClInclude Include="misc_funcs.h" />
     <ClInclude Include="operator.h" />
     <ClInclude Include="random.h" />

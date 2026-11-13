@@ -1,7 +1,8 @@
 #pragma once
+#include <string>
 #include <vector>
-#include "mechamon.h"
-using namespace std;
+#include <stdint.h>
+#include "mechamon_classes.h"
 
 const int MECHAMON_LIMIT = 3;
 const uint8_t OPERATOR_FLAG_RAN = 0b0001;
@@ -10,21 +11,21 @@ class Operator {
 public:
 	// Constructor Options
 	Operator() {}
-	Operator(string _name) {
+	Operator(std::string _name) {
 		name = _name;
 	}
 
 	// Set/Read/Get Methods
-	void setName(string newName) {
+	void setName(std::string newName) {
 		name = newName;
 	}
-	string readName() {
+	std::string readName() {
 		return name;
 	}
 	Mechamon* getCurrentMechamonPtr() {
 		return &mechamonList[curMechamonIndex];
 	}
-	vector<Mechamon>* getMechamonListPtr() {
+	std::vector<Mechamon>* getMechamonListPtr() {
 		return &mechamonList;
 	}
 	bool readRanFromBattle() {
@@ -55,8 +56,8 @@ public:
 	}
 private:
 	// Variable Methods
-	string name;
-	vector<Mechamon> mechamonList = {};
+	std::string name;
+	std::vector<Mechamon> mechamonList = {};
 	int curMechamonIndex = -1;
 	uint8_t statusFlags = 0b0000;
 };

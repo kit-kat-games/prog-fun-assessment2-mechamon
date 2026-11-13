@@ -3,40 +3,75 @@
   "WorkspaceRootPath": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\game_state.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\game_state.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\battle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\battle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\generic_header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\generic_header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_funcs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\mechamon_funcs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\ascii.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\ascii.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\operator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\operator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\mechamon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\mechamon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\mechamon_data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_classes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\mechamon_classes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\mechamon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_input_handler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\text_input_handler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\battle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\misc_funcs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\misc_funcs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\game_state.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\ascii.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\ascii.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\random.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\random.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.26100.0\\UM\\OBJIDL.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,17 +81,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\main.cpp",
               "RelativeDocumentMoniker": "mechamon\\main.cpp",
               "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\main.cpp",
               "RelativeToolTip": "mechamon\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-30T11:11:09.562Z",
               "IsPinned": true,
@@ -64,76 +99,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "game_state.h",
-              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.h",
-              "RelativeDocumentMoniker": "mechamon\\game_state.h",
-              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.h",
-              "RelativeToolTip": "mechamon\\game_state.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-11-13T10:47:24.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "battle.cpp",
-              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.cpp",
-              "RelativeDocumentMoniker": "mechamon\\battle.cpp",
-              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.cpp",
-              "RelativeToolTip": "mechamon\\battle.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-11-12T10:46:56.246Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "battle.h",
-              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h",
-              "RelativeDocumentMoniker": "mechamon\\battle.h",
-              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h",
-              "RelativeToolTip": "mechamon\\battle.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Title": "operator.h",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\operator.h",
+              "RelativeDocumentMoniker": "mechamon\\operator.h",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\operator.h",
+              "RelativeToolTip": "mechamon\\operator.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-11-10T11:13:36.71Z",
+              "WhenOpened": "2026-11-13T12:48:26.064Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ascii.h",
-              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\ascii.h",
-              "RelativeDocumentMoniker": "mechamon\\ascii.h",
-              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\ascii.h",
-              "RelativeToolTip": "mechamon\\ascii.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Title": "mechamon_data.h",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_data.h",
+              "RelativeDocumentMoniker": "mechamon\\mechamon_data.h",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_data.h",
+              "RelativeToolTip": "mechamon\\mechamon_data.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-11-12T09:57:48.904Z",
+              "WhenOpened": "2026-11-13T12:42:52.951Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "game_state.cpp",
-              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.cpp",
-              "RelativeDocumentMoniker": "mechamon\\game_state.cpp",
-              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.cpp",
-              "RelativeToolTip": "mechamon\\game_state.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-11-12T10:14:15.019Z",
+              "DocumentIndex": 7,
+              "Title": "mechamon_classes.h",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_classes.h",
+              "RelativeDocumentMoniker": "mechamon\\mechamon_classes.h",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_classes.h",
+              "RelativeToolTip": "mechamon\\mechamon_classes.h",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAHoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-13T12:40:11.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
+              "Title": "mechamon_funcs.h",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_funcs.h",
+              "RelativeDocumentMoniker": "mechamon\\mechamon_funcs.h",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_funcs.h",
+              "RelativeToolTip": "mechamon\\mechamon_funcs.h",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwDQAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-13T12:39:55.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "mechamon.h",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.h",
+              "RelativeDocumentMoniker": "mechamon\\mechamon.h",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.h",
+              "RelativeToolTip": "mechamon\\mechamon.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-13T12:37:51.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "mechamon.cpp",
               "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon.cpp",
               "RelativeDocumentMoniker": "mechamon\\mechamon.cpp",
@@ -143,52 +174,156 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-11-12T21:56:39.631Z",
               "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "57574e19-7b79-41f2-8e04-3c93f2d5ab27",
-        "Display": 1,
-        "X": 72,
-        "Y": 38,
-        "Width": 1578,
-        "Height": 985,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "generic_header.h",
-              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\generic_header.h",
-              "RelativeDocumentMoniker": "mechamon\\generic_header.h",
-              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\generic_header.h",
-              "RelativeToolTip": "mechamon\\generic_header.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "misc_funcs.h",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\misc_funcs.h",
+              "RelativeDocumentMoniker": "mechamon\\misc_funcs.h",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\misc_funcs.h",
+              "RelativeToolTip": "mechamon\\misc_funcs.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-11-12T10:29:26.875Z",
+              "WhenOpened": "2026-11-13T12:28:27.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "battle.h",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h",
+              "RelativeDocumentMoniker": "mechamon\\battle.h",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h",
+              "RelativeToolTip": "mechamon\\battle.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-10T11:13:36.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "main.h",
               "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\main.h",
               "RelativeDocumentMoniker": "mechamon\\main.h",
               "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\main.h",
               "RelativeToolTip": "mechamon\\main.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-11-12T10:15:07.151Z",
+              "WhenOpened": "2026-11-13T11:44:28.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "battle.cpp",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.cpp",
+              "RelativeDocumentMoniker": "mechamon\\battle.cpp",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.cpp",
+              "RelativeToolTip": "mechamon\\battle.cpp",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAnwE0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-11-12T10:46:56.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "game_state.cpp",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.cpp",
+              "RelativeDocumentMoniker": "mechamon\\game_state.cpp",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\game_state.cpp",
+              "RelativeToolTip": "mechamon\\game_state.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-11-12T10:14:15.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "text_input_handler.h",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_input_handler.h",
+              "RelativeDocumentMoniker": "mechamon\\text_input_handler.h",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\text_input_handler.h",
+              "RelativeToolTip": "mechamon\\text_input_handler.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-13T11:36:35.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "data.h",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\data.h",
+              "RelativeDocumentMoniker": "mechamon\\data.h",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\data.h",
+              "RelativeToolTip": "mechamon\\data.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-13T11:07:46.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ascii.h",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\ascii.h",
+              "RelativeDocumentMoniker": "mechamon\\ascii.h",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\ascii.h",
+              "RelativeToolTip": "mechamon\\ascii.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-12T09:57:48.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "random.h",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\random.h",
+              "RelativeDocumentMoniker": "mechamon\\random.h",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\random.h",
+              "RelativeToolTip": "mechamon\\random.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-13T11:08:19.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "globals.h",
+              "DocumentMoniker": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\globals.h",
+              "RelativeDocumentMoniker": "mechamon\\globals.h",
+              "ToolTip": "C:\\Users\\p016525q\\Documents\\GitHub\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\globals.h",
+              "RelativeToolTip": "mechamon\\globals.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-13T11:07:49.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "objidl.h",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um\\objidl.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um\\objidl.h",
+              "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um\\objidl.h",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.26100.0\\um\\objidl.h",
+              "ViewState": "AgIAAHg4AAAAAAAAAAAnwJI4AAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-13T11:18:19.938Z",
               "EditorCaption": ""
             }
           ]

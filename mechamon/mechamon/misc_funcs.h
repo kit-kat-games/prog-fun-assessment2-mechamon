@@ -1,8 +1,8 @@
 #pragma once
-using namespace std;
+#include <string>
 
 template <typename S, typename A>
-bool isWithin(S searching, A structure) {
+inline bool isWithin(S searching, A structure) {
 	for (S s : structure) {
 		if (searching == s) {
 			return true;
@@ -11,14 +11,14 @@ bool isWithin(S searching, A structure) {
 	return false;
 }
 
-bool stringsEqualCaseInsensitive(string strA, string strB) {
-	string a = "";
+inline bool stringsEqualCaseInsensitive(std::string strA, std::string strB) {
+	std::string a = "";
 	for (char c : strA) {
-		a += tolower(c);
+		a += std::tolower(c);
 	}
-	string b = "";
+	std::string b = "";
 	for (char c : strB) {
-		b += tolower(c);
+		b += std::tolower(c);
 	}
 	bool stringsEqual = (a == b);
 	return stringsEqual;

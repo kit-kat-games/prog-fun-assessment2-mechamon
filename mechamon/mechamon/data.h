@@ -1,8 +1,8 @@
 #pragma once
+#include <string>
 #include <vector>
-using namespace std;
 
-const vector<string> VALID_OPERATOR_NAMES = {
+const std::vector<std::string> VALID_OPERATOR_NAMES = {
 	"Jaelynn", "Alonso", "Mina", "Morgan", "Brooks", "Wynter", "Kaleb", "Foster", "Ezekiel", "Mira",
 	"Ezra", "Alexandra", "Briggs", "Briar", "Quincy", "Annabelee", "Damien", "Danielle", "Kairo", "Jaylin",
 	"Gary", "Carmen", "Elliot", "Sierra", "Donovan", "Kali", "Taylor", "Blake", "Murphy", "Laylah",
@@ -10,7 +10,7 @@ const vector<string> VALID_OPERATOR_NAMES = {
 	"Amelie", "Alivia", "Rocco", "Quinn", "Andres", "Lilliana", "Francisco", "Dennis", "Gloria", "Tate"
 };
 
-const vector<string> VALID_MECHAMON_NAMES = {
+const std::vector<std::string> VALID_MECHAMON_NAMES = {
 	"Cyb", "Rusty", "Sparkle", "Exator", "Ratchet", "Ion", "Axuz", "Gadget", "Jet", "Norbit",
 	"Gearz", "Clank", "Tracker", "Dustie", "Azert", "Dotty", "Talus", "Silver", "Mach", "Elur",
 	"Flash", "Nova", "Bit", "Axel", "Spencer", "Skip", "Max", "Spark", "Scrappy", "Bolt",

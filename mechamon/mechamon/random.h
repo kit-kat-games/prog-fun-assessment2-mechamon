@@ -1,5 +1,6 @@
 #pragma once
 #include <random>
+#include <algorithm>
 
-random_device rd;
-mt19937 rng{ rd() };
+inline std::random_device rd;
+inline std::mt19937 rng{ rd() };

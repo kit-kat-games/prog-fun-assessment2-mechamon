@@ -29,9 +29,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="generic_header.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="operator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -66,6 +63,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mechamon_funcs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mechamon_classes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mechamon_data.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

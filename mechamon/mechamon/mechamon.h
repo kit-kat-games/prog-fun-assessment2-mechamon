@@ -1,8 +1,9 @@
 #pragma once
 #include <vector>
 #include <map>
-#include "globals.h"
-using namespace std;
+#include <string>
+#include <stdint.h>
+#include "text_output_handler.h"
 
 // Status Flag For A Mechamon Would Be 0b0000'0000'0000'0000'0000
 // Most right is the mask flags for what statuses are active
@@ -16,21 +17,21 @@ const uint8_t STATUS_MASK_BURNING = 0b0100;
 const uint8_t STATUS_MASK_STRENGTHENED = 0b1000;
 
 struct MechamonConstructor;
-inline MechamonConstructor createMechamonConstructor(string mechamonType, string instanceName = "");
-inline vector<string> getPossibleMechamonTypes();
-inline string getStatusEffectString(uint8_t statusApplyMask);
-inline void displayInfoOfType(string type);
+inline MechamonConstructor createMechamonConstructor(std::string mechamonType, std::string instanceName = "");
+inline std::vector<std::string> getPossibleMechamonTypes();
+inline std::string getStatusEffectString(uint8_t statusApplyMask);
+inline void displayInfoOfType(std::string type);
 
 struct Attack {
 	// Constructor Options
 	Attack() {}
-	Attack(string _name) {
+	Attack(std::string _name) {
 		name = _name;
 	}
 	Attack(int _damage) {
 		damage = _damage;
 	}
-	Attack(string _name, int _damage) {
+	Attack(std::string _name, int _damage) {
 		name = _name;
 		damage = _damage;
 	}
@@ -38,21 +39,21 @@ struct Attack {
 		damage = _damage;
 		statusApplyMask = _statusApplyMask;
 	}
-	Attack(string _name, int _damage, uint8_t _statusApplyMask) {
+	Attack(std::string _name, int _damage, uint8_t _statusApplyMask) {
 		name = _name;
 		damage = _damage;
 		statusApplyMask = _statusApplyMask;
 	}
 	
 	// Variable Members
-	string name = "";
+	std::string name = "";
 	int damage = -1;
 	uint8_t statusApplyMask = STATUS_MASK_CLEAR;
 	
 	//
 	void displayInfo() {
 		textOutputPtr->print("Name: " + name);
-		textOutputPtr->print("DMG: " + to_string(damage));
+		textOutputPtr->print("DMG: " + std::to_string(damage));
 		textOutputPtr->print("Status Effect: " + getStatusEffectString(statusApplyMask));
 	}
 };
@@ -60,21 +61,21 @@ struct Attack {
 struct MechamonConstructor {
 	// Constructor Options
 	MechamonConstructor() {}
-	MechamonConstructor(string _type) {
+	MechamonConstructor(std::string _type) {
 		type = _type;
 	}
-	MechamonConstructor(string _type, string _name) {
+	MechamonConstructor(std::string _type, std::string _name) {
 		type = _type;
 		name = _name;
 	}
-	MechamonConstructor(string _type, string _name, int _attack, int _health, int _speed) {
+	MechamonConstructor(std::string _type, std::string _name, int _attack, int _health, int _speed) {
 		type = _type;
 		name = _name;
 		attack = _attack;
 		health = _health;
 		speed = _speed;
 	}
-	MechamonConstructor(string _type, string _name, int _attack, int _health, int _speed, vector<Attack> _attackList) {
+	MechamonConstructor(std::string _type, std::string _name, int _attack, int _health, int _speed, std::vector<Attack> _attackList) {
 		type = _type;
 		name = _name;
 		attack = _attack;
@@ -84,15 +85,15 @@ struct MechamonConstructor {
 	}
 	
 	// Variable Members
-	string type = "";
-	string name = "";
+	std::string type = "";
+	std::string name = "";
 	int attack = -1;
 	int health = -1;
 	int speed = -1;
-	vector<Attack> attackList = {};
+	std::vector<Attack> attackList = {};
 };
 
-struct Mechamon {
+class Mechamon {
 public:
 	// Constructor Options
 	Mechamon() {}
@@ -107,13 +108,13 @@ public:
 	}
 
 	// Set/Read/Get Methods
-	void setName(string newName) {
+	void setName(std::string newName) {
 		name = newName;
 	}
-	string readName() {
+	std::string readName() {
 		return name;
 	}
-	string readType() {
+	std::string readType() {
 		return type;
 	}
 	int readAttack() {
@@ -125,7 +126,7 @@ public:
 	int readSpeed() {
 		return speed;
 	}
-	vector<Attack>* getAttackListPtr() {
+	std::vector<Attack>* getAttackListPtr() {
 		return &attacklist;
 	}
 	bool isDead() {
@@ -146,24 +147,24 @@ public:
 	}
 	void displayInfo() {
 		textOutputPtr->print("Type: " + type);
-		textOutputPtr->print("ATK: " + to_string(attack));
-		textOutputPtr->print("HP: " + to_string(health));
-		textOutputPtr->print("SPD: " + to_string(speed));
+		textOutputPtr->print("ATK: " + std::to_string(attack));
+		textOutputPtr->print("HP: " + std::to_string(health));
+		textOutputPtr->print("SPD: " + std::to_string(speed));
 	}
 private:
 	// Variable Methods
-	string name = "";
-	string type = "";
+	std::string name = "";
+	std::string type = "";
 	int attack = -1;
 	int health = -1;
 	int maxHealth = -1;
 	int speed = -1;
-	vector<Attack> attacklist = {};
+	std::vector<Attack> attacklist = {};
 	uint64_t statusFlags = 0b0000'0000'0000'0000'0000;
 };
 
-vector<string> _mechamonTypesList = { "mech1", "mech2", "mech3", "mech4", "mech5", "mech6" };
-map<string, MechamonConstructor> _typeConstructorMap = {
+inline std::vector<std::string> _mechamonTypesList = { "mech1", "mech2", "mech3", "mech4", "mech5", "mech6" };
+inline std::map<std::string, MechamonConstructor> _typeConstructorMap = {
 	{ "mech1", MechamonConstructor("mech1", "", 20, 50, 6, {Attack("Burning Punch", 10, (STATUS_MASK_BURNING | STATUS_MASK_STRENGTHENED))}) },
 	{ "mech2", MechamonConstructor("mech2", "", 25, 45, 6) },
 	{ "mech3", MechamonConstructor("mech3", "", 25, 55, 3) },
@@ -171,7 +172,7 @@ map<string, MechamonConstructor> _typeConstructorMap = {
 	{ "mech5", MechamonConstructor("mech5", "", 15, 60, 5) },
 	{ "mech6", MechamonConstructor("mech6", "", 15, 50, 8) },
 };
-map<uint8_t, string> _statusEffectNameMap = {
+inline std::map<uint8_t, std::string> _statusEffectNameMap = {
 	{ STATUS_MASK_CLEAR, "N/A" },
 	{ STATUS_MASK_SLOWED, "Slowed" },
 	{ STATUS_MASK_FROZEN, "Frozen" },

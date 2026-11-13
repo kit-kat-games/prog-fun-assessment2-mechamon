@@ -9,15 +9,15 @@ void printOpeningHeader() {
     textOutputPtr->printBorderLine();
 }
 
-string getPlayerMechamonChoice() {
+std::string getPlayerMechamonChoice() {
     // Get Possible Mechamon Choices
-    vector<string> possibleMechamons = getPossibleMechamonTypes();
-    vector<string> possibleInputs = {};
-    map<string, string> mechamonMap = {};
-    string choiceDisplayString = "";
+    std::vector<std::string> possibleMechamons = getPossibleMechamonTypes();
+    std::vector<std::string> possibleInputs = {};
+    std::map<std::string, std::string> mechamonMap = {};
+    std::string choiceDisplayString = "";
 
     for (int i = 0; i < possibleMechamons.size(); i++) {
-        string iString = to_string(i);
+        std::string iString = std::to_string(i);
         choiceDisplayString += (possibleMechamons[i] + " [" + iString + "]");
         possibleInputs.push_back(iString);
         
@@ -30,8 +30,8 @@ string getPlayerMechamonChoice() {
         mechamonMap.insert_or_assign(possibleInputs[i], possibleMechamons[i]);
     }
 
-    string choice = "";
-    vector<string> possibleInputsWithInfoChoice = possibleInputs;
+    std::string choice = "";
+    std::vector<std::string> possibleInputsWithInfoChoice = possibleInputs;
     possibleInputsWithInfoChoice.push_back("INFO");
     while (true) {
         // INSERT A WAY TO VIEW DATA OF MECHAMON BEING CHOSEN 
@@ -41,7 +41,7 @@ string getPlayerMechamonChoice() {
             break;
         }
         textOutputPtr->printEmptyLine();
-        string infoChoice = textInputPtr->getUserMultipleChoiceInput(possibleInputs, ("Please enter the number next to the mechamon you wish to view information about: " + choiceDisplayString + "."));
+        std::string infoChoice = textInputPtr->getUserMultipleChoiceInput(possibleInputs, ("Please enter the number next to the mechamon you wish to view information about: " + choiceDisplayString + "."));
         textOutputPtr->printEmptyLine();
         displayInfoOfType(mechamonMap[infoChoice]);
         textOutputPtr->printEmptyLine();
@@ -53,10 +53,10 @@ bool createPlayer() {
     textOutputPtr->print("Time to create your operator!");
 
     // Prompt player for their choice of name
-    string oName = textInputPtr->getUserInput("Please enter your operator's name. Enter 'RANDOM' for a random name instead: ");
+    std::string oName = textInputPtr->getUserInput("Please enter your operator's name. Enter 'RANDOM' for a random name instead: ");
     if (stringsEqualCaseInsensitive(oName, "RANDOM")) {
-        vector<string> tempNames = VALID_OPERATOR_NAMES;
-        shuffle(tempNames.begin(), tempNames.end(), rng);
+        std::vector<std::string> tempNames = VALID_OPERATOR_NAMES;
+        std::shuffle(tempNames.begin(), tempNames.end(), rng);
         oName = tempNames[0];
     }
     Operator player = Operator(oName);
@@ -66,13 +66,13 @@ bool createPlayer() {
 
     // Prompt player for their choice of mechamon, and assigning it its name
     textOutputPtr->print("Time to create your mechamon!");
-    string mType = getPlayerMechamonChoice();
-    string mName = textInputPtr->getUserInput("Please enter your mechamon's name. Enter 'RANDOM' for a random name instead: ");
+    std::string mType = getPlayerMechamonChoice();
+    std::string mName = textInputPtr->getUserInput("Please enter your mechamon's name. Enter 'RANDOM' for a random name instead: ");
 
     // If prompted, randomly select a name instead
     if (stringsEqualCaseInsensitive(mName, "RANDOM")) {
-        vector<string> tempMechamonNames = VALID_MECHAMON_NAMES;
-        shuffle(tempMechamonNames.begin(), tempMechamonNames.end(), rng);
+        std::vector<std::string> tempMechamonNames = VALID_MECHAMON_NAMES;
+        std::shuffle(tempMechamonNames.begin(), tempMechamonNames.end(), rng);
         mName = tempMechamonNames[0];
     }
 
@@ -89,7 +89,7 @@ bool createPlayer() {
         " of type " + readCurMechamonType(player) + ". Is this what you wish to play with? ");
 
     // Prompt user for whether they wish to create a new player or use the created one
-    string choice = textInputPtr->getUserMultipleChoiceInput({ "Y", "N" }, "Enter Y or N: ");
+    std::string choice = textInputPtr->getUserMultipleChoiceInput({ "Y", "N" }, "Enter Y or N: ");
     if (stringsEqualCaseInsensitive(choice, "Y")) {
         textOutputPtr->print("Player setup confirmed.");
     }
@@ -104,21 +104,21 @@ bool createPlayer() {
 
 void createOpponent() {
     // Randomly choose an opponent name
-    vector<string> tempOpponentNames = VALID_OPERATOR_NAMES;
-    shuffle(tempOpponentNames.begin(), tempOpponentNames.end(), rng);
-    string oName = tempOpponentNames[0];
+    std::vector<std::string> tempOpponentNames = VALID_OPERATOR_NAMES;
+    std::shuffle(tempOpponentNames.begin(), tempOpponentNames.end(), rng);
+    std::string oName = tempOpponentNames[0];
 
     Operator opponent = Operator(oName);
 
     // Randomly choose a type of mechamon
-    vector<string> tempMechamonTypes = getPossibleMechamonTypes();
-    shuffle(tempMechamonTypes.begin(), tempMechamonTypes.end(), rng);
-    string mType = tempMechamonTypes[0];
+    std::vector<std::string> tempMechamonTypes = getPossibleMechamonTypes();
+    std::shuffle(tempMechamonTypes.begin(), tempMechamonTypes.end(), rng);
+    std::string mType = tempMechamonTypes[0];
 
     // Randomly choose a name for the mechamon
-    vector<string> tempMechamonNames = VALID_MECHAMON_NAMES;
-    shuffle(tempMechamonNames.begin(), tempMechamonNames.end(), rng);
-    string mName = tempMechamonNames[0];
+    std::vector<std::string> tempMechamonNames = VALID_MECHAMON_NAMES;
+    std::shuffle(tempMechamonNames.begin(), tempMechamonNames.end(), rng);
+    std::string mName = tempMechamonNames[0];
 
     // Create a mechamon based on the randomly generated data
     MechamonConstructor constructor = createMechamonConstructor(mType, mName);
@@ -179,8 +179,8 @@ void resolveBattle() {
             } 
             // Randomly decide whether player or opponent goes first
             else if (pPriority == oPriority) {
-                vector<char> opts = { 'p', 'o' };
-                shuffle(opts.begin(), opts.end(), rng);
+                std::vector<char> opts = { 'p', 'o' };
+                std::shuffle(opts.begin(), opts.end(), rng);
                 if (opts[0] == 'p') {
                     playerFirst = true;
                 }
@@ -237,7 +237,7 @@ BattleStage resolveBattleResult() {
     }
 
     // Have player decide whether to end the game or find another battle
-    string choice = textInputPtr->getUserMultipleChoiceInput({ "Y", "N" }, "Would you like to find another battle? Enter Y or N: ");
+    std::string choice = textInputPtr->getUserMultipleChoiceInput({ "Y", "N" }, "Would you like to find another battle? Enter Y or N: ");
     if (stringsEqualCaseInsensitive(choice, "N")) {
         textOutputPtr->print("Ending Current Game.");
         textOutputPtr->printBorderLine();
@@ -250,7 +250,7 @@ BattleStage resolveBattleResult() {
 }
 
 bool resolveGameResult() {
-    string choice = textInputPtr->getUserMultipleChoiceInput({ "Y", "N" }, "Would you like to play again? Enter Y or N: ");
+    std::string choice = textInputPtr->getUserMultipleChoiceInput({ "Y", "N" }, "Would you like to play again? Enter Y or N: ");
     if (stringsEqualCaseInsensitive(choice, "Y")) {
         return true;
     }

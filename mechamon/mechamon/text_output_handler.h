@@ -1,11 +1,12 @@
 #pragma once
 #include <iostream>
+#include <iomanip>
 #include <string>
+#include <stdio.h>
 #include <windows.h>
 #include <vector>
 #include <thread>
 #include <chrono>
-using namespace std;
 
 const int IN_TERMINAL_WIDTH = 120;
 const char BORDER_CHAR = '*';
@@ -22,127 +23,127 @@ public:
 		allowColoredBorder = false;
 	}
 	
-	static inline void print(string str, bool inclLeftBorder = true, bool inclRightBorder = true, bool inclEndl = true) {
+	void print(std::string str, bool inclLeftBorder = true, bool inclRightBorder = true, bool inclEndl = true) {
 		if (str.length() <= LINE_LENGTH_LIMIT) {
 			if (inclLeftBorder) { _printLeftBorder(); }
-			cout << str;
+			std::cout << str;
 			if (inclRightBorder) { _printRightBorder(str); }
-			if (inclEndl) { cout << endl; }
+			if (inclEndl) { std::cout << std::endl; }
 		}
 		else {
-			vector<string> splitStrLines = _splitLongString(str);
-			for (string s : splitStrLines) {
+			std::vector<std::string> splitStrLines = _splitLongString(str);
+			for (std::string s : splitStrLines) {
 				print(s, inclLeftBorder, inclRightBorder, inclEndl);
 			}
 		}
 	}
-	static inline void printCentered(string str, bool inclLeftBorder = true, bool inclRightBorder = true, bool inclEndl = true) {
+	void printCentered(std::string str, bool inclLeftBorder = true, bool inclRightBorder = true, bool inclEndl = true) {
 		if (str.length() <= LINE_LENGTH_LIMIT) {
 			int offset = ((IN_TERMINAL_WIDTH - str.length()) / 2) - 2;
-			string strOuput = string(offset, ' ') + str;
+			std::string strOuput = std::string(offset, ' ') + str;
 			if (inclLeftBorder) { _printLeftBorder(); }
-			cout << strOuput;
+			std::cout << strOuput;
 			if (inclRightBorder) { _printRightBorder(strOuput); }
-			if (inclEndl) { cout << endl; }
+			if (inclEndl) { std::cout << std::endl; }
 		}
 		else {
-			vector<string> splitStrLines = _splitLongString(str);
-			for (string s : splitStrLines) {
+			std::vector<std::string> splitStrLines = _splitLongString(str);
+			for (std::string s : splitStrLines) {
 				printCentered(s, inclLeftBorder, inclRightBorder, inclEndl);
 			}
 		}
 	}
-	static inline void printBorderLine() {
-		cout << string(IN_TERMINAL_WIDTH, BORDER_CHAR) << endl;
+	void printBorderLine() {
+		std::cout << std::string(IN_TERMINAL_WIDTH, BORDER_CHAR) << std::endl;
 	}
-	static inline void printEmptyLine() {
+	void printEmptyLine() {
 		_printLeftBorder();
 		_printRightBorder("");
-		cout << endl;
+		std::cout << std::endl;
 	}
-	static inline void printTyping(string str, bool inclLeftBorder = true, bool inclRightBorder = true, bool inclEndl = true) {
+	void printTyping(std::string str, bool inclLeftBorder = true, bool inclRightBorder = true, bool inclEndl = true) {
 		if (str.length() <= LINE_LENGTH_LIMIT) {
 			if (inclLeftBorder) { _printLeftBorder(); }
 			for (char c : str) {
-				cout << c;
-				this_thread::sleep_for(chrono::milliseconds(TYPING_INTERVAL));
+				std::cout << c;
+				std::this_thread::sleep_for(std::chrono::milliseconds(TYPING_INTERVAL));
 			}
 			if (inclRightBorder) { _printRightBorder(str); }
-			if (inclEndl) { cout << endl; }
+			if (inclEndl) { std::cout << std::endl; }
 		}
 		else {
-			vector<string> splitStrLines = _splitLongString(str);
-			for (string s : splitStrLines) {
+			std::vector<std::string> splitStrLines = _splitLongString(str);
+			for (std::string s : splitStrLines) {
 				printTyping(s, inclLeftBorder, inclRightBorder, inclEndl);
 			}
 		}
 	}
-	static inline void printCenteredTyping(string str, bool inclLeftBorder = true, bool inclRightBorder = true, bool inclEndl = true) {
+	void printCenteredTyping(std::string str, bool inclLeftBorder = true, bool inclRightBorder = true, bool inclEndl = true) {
 		if (str.length() <= LINE_LENGTH_LIMIT) {
 			int offset = ((IN_TERMINAL_WIDTH - str.length()) / 2) - 2;
-			string strOuput = string(offset, ' ') + str;
+			std::string strOuput = std::string(offset, ' ') + str;
 			if (inclLeftBorder) { _printLeftBorder(); }
-			cout << string(offset, ' ');
+			std::cout << std::string(offset, ' ');
 			for (char c : str) {
-				cout << c;
-				this_thread::sleep_for(chrono::milliseconds(TYPING_INTERVAL));
+				std::cout << c;
+				std::this_thread::sleep_for(std::chrono::milliseconds(TYPING_INTERVAL));
 			}
 			if (inclRightBorder) { _printRightBorder(strOuput); }
-			if (inclEndl) { cout << endl; }
+			if (inclEndl) { std::cout << std::endl; }
 		}
 		else {
-			vector<string> splitStrLines = _splitLongString(str);
-			for (string s : splitStrLines) {
+			std::vector<std::string> splitStrLines = _splitLongString(str);
+			for (std::string s : splitStrLines) {
 				printCenteredTyping(s, inclLeftBorder, inclRightBorder, inclEndl);
 			}
 		}
 	}
-	static inline void setTextColor(int newColor) {
+	void setTextColor(int newColor) {
 		SetConsoleTextAttribute(hConsole, newColor);
 		curTextColor = newColor;
 	}
-	static inline int resetTextColor() {
+	int resetTextColor() {
 		int curColor = curTextColor;
 		SetConsoleTextAttribute(hConsole, default_attributes);
 		curTextColor = -1;
 		return curColor;
 	}
 private:
-	static bool allowColoredBorder;
+	bool allowColoredBorder;
 
 	// Stack Overflow did help in finding the correct api to use, as well as the general syntax for storing attributes and returning to the default.
-	static HANDLE hConsole;
-	static CONSOLE_SCREEN_BUFFER_INFO consoleInfo;
-	static WORD default_attributes;
-	static int curTextColor;
+	HANDLE hConsole;
+	CONSOLE_SCREEN_BUFFER_INFO consoleInfo;
+	WORD default_attributes;
+	int curTextColor;
 
-	static inline void _printLeftBorder() {
+	void _printLeftBorder() {
 		if (allowColoredBorder) {
-			cout << BORDER_CHAR << " ";
+			std::cout << BORDER_CHAR << " ";
 		}
 		else {
 			int curColor = resetTextColor();
-			cout << BORDER_CHAR << " ";
+			std::cout << BORDER_CHAR << " ";
 			setTextColor(curColor);
 		}
 	}
-	static inline void _printRightBorder(string lineContents) {
+	void _printRightBorder(std::string lineContents) {
 		int leftoverLine = IN_TERMINAL_WIDTH - lineContents.length() - 3;
 		if (allowColoredBorder) {
-			cout << string(leftoverLine, ' ');
-			cout << BORDER_CHAR;
+			std::cout << std::string(leftoverLine, ' ');
+			std::cout << BORDER_CHAR;
 		}
 		else {
 			int curColor = resetTextColor();
-			cout << string(leftoverLine, ' ');
-			cout << BORDER_CHAR;
+			std::cout << std::string(leftoverLine, ' ');
+			std::cout << BORDER_CHAR;
 			setTextColor(curColor);
 		}
 	}
-	static inline vector<string> _splitLongString(string str) {
-		vector<string> splitStrLines = {};
-		string currentLine = "";
-		string currentWord = "";
+	std::vector<std::string> _splitLongString(std::string str) {
+		std::vector<std::string> splitStrLines = {};
+		std::string currentLine = "";
+		std::string currentWord = "";
 		for (char c : str) {
 			if (c != ' ') {
 				currentWord += c;
@@ -171,3 +172,5 @@ private:
 		return splitStrLines;
 	}
 };
+
+inline TextOutput* textOutputPtr;

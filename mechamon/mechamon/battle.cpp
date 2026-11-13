@@ -1,28 +1,33 @@
 #pragma once
 #include <random>
 #include <algorithm>
+#include <string>
 #include "battle.h"
 #include "misc_funcs.h"
-#include "globals.h"
+#include "text_output_handler.h"
+#include "text_input_handler.h"
+#include "random.h"
+#include "mechamon_funcs.h"
 
-vector<string> getPossibleActionInputs() {
-	vector<string> result;
-	for (const pair<Action, string>& p : _actionInputMap) {
+
+std::vector<std::string> getPossibleActionInputs() {
+	std::vector<std::string> result;
+	for (const std::pair<Action, std::string>& p : _actionInputMap) {
 		result.push_back(p.second);
 	}
 	return result;
 }
 
-Action _getActionOfInput(string input) {
-	string temp = input;
+Action _getActionOfInput(std::string input) {
+	std::string temp = input;
 	input = "";
 	for (char c : temp) {
-		input += toupper(c);
+		input += std::toupper(c);
 	}
 
-	vector<string> possibleInputs;
-	map<string, Action> inputMap;
-	for (const pair<Action, string>& p : _actionInputMap) {
+	std::vector<std::string> possibleInputs;
+	std::map<std::string, Action> inputMap;
+	for (const std::pair<Action, std::string>& p : _actionInputMap) {
 		possibleInputs.push_back(p.second);
 		inputMap.insert_or_assign(p.second, p.first);
 	}
@@ -56,27 +61,27 @@ void _resolveViewInfo(GameState* gameStatePtr) {
 	textOutputPtr->print("View a list of your Mechamons [M]");
 	textOutputPtr->print("View a list of your Attacks [A]");
 	textOutputPtr->print("View a list of your Items [I]");
-	string input = textInputPtr->getUserMultipleChoiceInput({ "P", "O", "M", "A", "I" }, "Enter the character next to the choice you wish to view info on.");
+	std::string input = textInputPtr->getUserMultipleChoiceInput({ "P", "O", "M", "A", "I" }, "Enter the character next to the choice you wish to view info on.");
 	textOutputPtr->printEmptyLine();
 
 	if (stringsEqualCaseInsensitive(input, "P")) {
-		gameStatePtr->getPlayerPtr()->getCurrentMechamonPtr()->displayInfo();
+		mechamonFuncsPtr->displayInfo(gameStatePtr->getPlayerPtr()->getCurrentMechamonPtr());
 	}
 	else if (stringsEqualCaseInsensitive(input, "O")) {
-		gameStatePtr->getOpponentPtr()->getCurrentMechamonPtr()->displayInfo();
+		mechamonFuncsPtr->displayInfo(gameStatePtr->getOpponentPtr()->getCurrentMechamonPtr());
 	}
 	else if (stringsEqualCaseInsensitive(input, "M")) {
 		textOutputPtr->print("Your Mechamon:");
-		vector<Mechamon>* mechamonListPtr = gameStatePtr->getPlayerPtr()->getMechamonListPtr();
+		std::vector<Mechamon>* mechamonListPtr = gameStatePtr->getPlayerPtr()->getMechamonListPtr();
 		for (Mechamon mechamon : *mechamonListPtr) {
 			textOutputPtr->print(mechamon.readName());
 		}
 	}
 	else if (stringsEqualCaseInsensitive(input, "A")) {
-		vector<Attack>* attackListPtr = gameStatePtr->getPlayerPtr()->getCurrentMechamonPtr()->getAttackListPtr();
+		std::vector<Attack>* attackListPtr = gameStatePtr->getPlayerPtr()->getCurrentMechamonPtr()->getAttackListPtr();
 		for (int i = 0; i < attackListPtr->size(); i++) {
-			vector<Attack> attackList = *attackListPtr;
-			attackList[i].displayInfo();
+			std::vector<Attack> attackList = *attackListPtr;
+			mechamonFuncsPtr->displayInfo(attackList[i]);
 			if (i != attackList.size() - 1) {
 				textOutputPtr->printEmptyLine();
 			}
@@ -90,13 +95,13 @@ void _resolveViewInfo(GameState* gameStatePtr) {
 }
 
 void resolveActionSelection(Action* pActionPtr, Action* oActionPtr, GameState* gameStatePtr) {
-	vector<string> possibleActions = getPossibleActionInputs();
-	vector<string> playerActions = possibleActions;
+	std::vector<std::string> possibleActions = getPossibleActionInputs();
+	std::vector<std::string> playerActions = possibleActions;
 	playerActions.push_back("?");
 
 	while (true) {
 		// Player chooses an action to do
-		string input = textInputPtr->getUserMultipleChoiceInput(playerActions, ("Please choose what you wish to do this turn, enter the character next to the choice you wish to make. " +
+		std::string input = textInputPtr->getUserMultipleChoiceInput(playerActions, ("Please choose what you wish to do this turn, enter the character next to the choice you wish to make. " +
 			actionChoicesDisplayString + ", VIEW INFO [?]"));
 		if (input != "?") {
 			*pActionPtr = _getActionOfInput(input);
@@ -108,28 +113,28 @@ void resolveActionSelection(Action* pActionPtr, Action* oActionPtr, GameState* g
 	}
 
 	// Opponent randomly chooses an action to do - COULD INSERT AI FOR SMART MOVE CHOICE
-	shuffle(possibleActions.begin(), possibleActions.end(), rng);
+	std::shuffle(possibleActions.begin(), possibleActions.end(), rng);
 	*oActionPtr = _getActionOfInput(possibleActions[0]);
 
 	textOutputPtr->printEmptyLine();
 }
 
 void _resolveAttackAction(Operator* userPtr, Operator* targetPtr) {
-	string userName = userPtr->readName();
-	string targName = targetPtr->readName();
-	string userMechName = readCurMechamonName(userPtr);
-	string targMechName = readCurMechamonName(targetPtr);
+	std::string userName = userPtr->readName();
+	std::string targName = targetPtr->readName();
+	std::string userMechName = readCurMechamonName(userPtr);
+	std::string targMechName = readCurMechamonName(targetPtr);
 
 	textOutputPtr->print(userName + "'s mechamon " + userMechName + " attacks!");
 
 	int dmg = userPtr->getCurrentMechamonPtr()->readAttack();
 	targetPtr->getCurrentMechamonPtr()->dealDamage(dmg);
 
-	textOutputPtr->print(userMechName + " deals " + to_string(dmg) + " damage to " + targMechName + ".");
+	textOutputPtr->print(userMechName + " deals " + std::to_string(dmg) + " damage to " + targMechName + ".");
 
 	int hp = targetPtr->getCurrentMechamonPtr()->readHealth();
 	if (!targetPtr->getCurrentMechamonPtr()->isDead()) {
-		textOutputPtr->print(targMechName + " is now at " + to_string(hp) + "HP.");
+		textOutputPtr->print(targMechName + " is now at " + std::to_string(hp) + "HP.");
 	}
 	else {
 		textOutputPtr->print(targMechName + " faints!");

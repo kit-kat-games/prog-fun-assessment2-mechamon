@@ -1,14 +1,14 @@
 #pragma once
-#include "generic_header.h"
+#include <vector>
+#include <map>
+#include <string>
+#include "game_state.h"
 #include "mechamon.h"
 #include "operator.h"
 #include "text_output_handler.h"
-#include "game_state.h"
 #include "text_input_handler.h"
-#include "ascii.h"
 #include "data.h"
 #include "random.h"
 #include "battle.h"
-#include "globals.h"
 
 GameState gameState;

@@ -1,28 +1,29 @@
 #pragma once
-#include "misc_funcs.h"
-#include "globals.h"
+#include <iostream>
 #include <vector>
-using namespace std;
+#include <string>
+#include "misc_funcs.h"
+#include "text_output_handler.h"
 
 class TextInput {
 public:
-	static inline string getUserInput(string inputRequest = "", bool mustHaveCharacters = true, bool mustHaveAlpha = false) {
+	std::string getUserInput(std::string inputRequest = "", bool mustHaveCharacters = true, bool mustHaveAlpha = false) {
 		_printInputField(inputRequest);
-		string input = _getLineStringInput(inputRequest, mustHaveCharacters, mustHaveAlpha);
-		string lineContents = input + inputRequest;
+		std::string input = _getLineStringInput(inputRequest, mustHaveCharacters, mustHaveAlpha);
+		std::string lineContents = input + inputRequest;
 		// Currently - Work out how to stop getline putting you on next line
 		//printRightBorder(lineContents);
 		return input;
 	}
-	static inline string getUserMultipleChoiceInput(vector<string> options, string inputRequest = "", bool caseMatters = false) {
-		string result = "";
+	std::string getUserMultipleChoiceInput(std::vector<std::string> options, std::string inputRequest = "", bool caseMatters = false) {
+		std::string result = "";
 		if (!caseMatters) {
-			vector<string> temp = options;
+			std::vector<std::string> temp = options;
 			options.clear();
-			for (string s : temp) {
-				string option = "";
+			for (std::string s : temp) {
+				std::string option = "";
 				for (char c : s) {
-					option += tolower(c);
+					option += std::tolower(c);
 				}
 				options.push_back(option);
 			}
@@ -32,13 +33,13 @@ public:
 			textOutputPtr->print(inputRequest);
 		}
 		while (true) {
-			string input = getUserInput("Please enter your choice of option: ");
-			string casedInput = input;
+			std::string input = getUserInput("Please enter your choice of option: ");
+			std::string casedInput = input;
 			if (!caseMatters) {
-				string temp = input;
+				std::string temp = input;
 				casedInput = "";
 				for (char c : temp) {
-					casedInput += tolower(c);
+					casedInput += std::tolower(c);
 				}
 			}
 			if (isWithin(casedInput, options)) {
@@ -52,16 +53,16 @@ public:
 		return result;
 	}
 private:
-	static inline void _printInputField(string inputRequest = "") {
+	void _printInputField(std::string inputRequest = "") {
 		if (inputRequest != "") {
 			textOutputPtr->print(inputRequest, true, false, false);
 		}
 	}
-	static inline string _getLineStringInput(string inputRequest = "", bool mustHaveCharacters = true, bool mustHaveAlpha = false) {
+	std::string _getLineStringInput(std::string inputRequest = "", bool mustHaveCharacters = true, bool mustHaveAlpha = false) {
 		while (true) {
-			string input;
-			getline(cin, input);
-			if (cin.fail()) {
+			std::string input;
+			getline(std::cin, input);
+			if (std::cin.fail()) {
 				textOutputPtr->print("ERROR: That is not a string.");
 			}
 			else if (input == "") {
@@ -102,3 +103,5 @@ private:
 		}
 	}
 };
+
+inline TextInput* textInputPtr;

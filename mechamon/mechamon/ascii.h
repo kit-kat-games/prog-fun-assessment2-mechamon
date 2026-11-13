@@ -1,8 +1,7 @@
 #pragma once
 #include <string>
-using namespace std;
 
-string mech1 = R"(
+std::string mech1 = R"(
          __
  _(\    |@@|
 (__/\__ \--/ __
@@ -13,7 +12,7 @@ string mech1 = R"(
       _)(  )(_
      `---''---`
 )";
-string mech2 = R"(
+std::string mech2 = R"(
        __
       |@@|
   /-\ \--/ _
@@ -24,7 +23,7 @@ string mech2 = R"(
 /   _)(  )(_
    `---''---`
 )";
-string mech3 = R"(
+std::string mech3 = R"(
        _
       [ ]
      (   )

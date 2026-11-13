@@ -1,6 +1,6 @@
 #pragma once
+#include <string>
 #include "operator.h"
-using namespace std;
 
 enum TurnStage {
 	tSTAGE_OUTOFBATTLE,
@@ -45,10 +45,10 @@ public:
 	inline Operator* getOpponentPtr() {
 		return &opponent;
 	}
-	inline string readPlayerName() {
+	inline std::string readPlayerName() {
 		return player.readName();
 	}
-	inline string readOpponentName() {
+	inline std::string readOpponentName() {
 		return opponent.readName();
 	}
 private:
@@ -59,7 +59,7 @@ private:
 };
 
 // Overloads of 2 functions - allow either an operator object, or a pointer to an operator object to be passed in
-string readCurMechamonName(Operator oper);
-string readCurMechamonName(Operator* oper);
-string readCurMechamonType(Operator oper);
-string readCurMechamonType(Operator* oper);
+inline std::string readCurMechamonName(Operator oper);
+inline std::string readCurMechamonName(Operator* oper);
+inline std::string readCurMechamonType(Operator oper);
+inline std::string readCurMechamonType(Operator* oper);
