@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "WorkspaceRootPath": "C:\\Users\\evely\\GDgames\\prog-fun-assessment2-mechamon\\mechamon\\",
   "Documents": [
     {
@@ -41,6 +42,41 @@
     {
       "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\evely\\GDgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\consts.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\consts.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+=======
+  "WorkspaceRootPath": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\battle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_classes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\mechamon_classes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_funcs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\mechamon_funcs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_status_data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\mechamon_status_data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\misc_funcs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\misc_funcs.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\mechamon_data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DD1FA78E-6778-4886-82D5-5F7AF23AC31F}|mechamon\\mechamon.vcxproj|solutionrelative:mechamon\\item.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -50,6 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -65,6 +102,22 @@
               "WhenOpened": "2026-10-30T11:11:09.562Z",
               "IsPinned": true,
               "EditorCaption": ""
+=======
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\main.cpp",
+              "RelativeDocumentMoniker": "mechamon\\main.cpp",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\main.cpp",
+              "RelativeToolTip": "mechamon\\main.cpp",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAAwNYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-10-30T11:11:09.562Z",
+              "IsPinned": true
+>>>>>>> Stashed changes
             },
             {
               "$type": "Bookmark",
@@ -72,6 +125,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 6,
               "Title": "generic_header.h",
               "DocumentMoniker": "C:\\Users\\evely\\GDgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\generic_header.h",
@@ -152,12 +206,72 @@
               "ToolTip": "C:\\Users\\evely\\GDgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h",
               "RelativeToolTip": "mechamon\\battle.h",
               "ViewState": "AgIAAFQAAAAAAAAAAAAAAGQAAAADAAAAAAAAAA==",
+=======
+              "DocumentIndex": 4,
+              "Title": "misc_funcs.h",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\misc_funcs.h",
+              "RelativeDocumentMoniker": "mechamon\\misc_funcs.h",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\misc_funcs.h",
+              "RelativeToolTip": "mechamon\\misc_funcs.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-11-10T11:13:36.71Z",
+              "WhenOpened": "2026-11-17T13:21:04.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "mechamon_data.h",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_data.h",
+              "RelativeDocumentMoniker": "mechamon\\mechamon_data.h",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_data.h",
+              "RelativeToolTip": "mechamon\\mechamon_data.h",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwDIAAAADAAAAAAAAAA==",
+>>>>>>> Stashed changes
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-16T15:20:37.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "battle.h",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h",
+              "RelativeDocumentMoniker": "mechamon\\battle.h",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\battle.h",
+              "RelativeToolTip": "mechamon\\battle.h",
+              "ViewState": "AgIAAG4AAAAAAAAAAADwv4cAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-14T11:06:18.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "item.h",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\item.h",
+              "RelativeDocumentMoniker": "mechamon\\item.h",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\item.h",
+              "RelativeToolTip": "mechamon\\item.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-14T11:01:19.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "mechamon_classes.h",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_classes.h",
+              "RelativeDocumentMoniker": "mechamon\\mechamon_classes.h",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_classes.h",
+              "RelativeToolTip": "mechamon\\mechamon_classes.h",
+              "ViewState": "AgIAAJAAAAAAAAAAAADgv4EAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-14T10:51:59.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 7,
               "Title": "data.h",
               "DocumentMoniker": "C:\\Users\\evely\\GDgames\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\data.h",
@@ -179,6 +293,31 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-30T11:14:55.499Z"
+=======
+              "DocumentIndex": 2,
+              "Title": "mechamon_funcs.h",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_funcs.h",
+              "RelativeDocumentMoniker": "mechamon\\mechamon_funcs.h",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_funcs.h",
+              "RelativeToolTip": "mechamon\\mechamon_funcs.h",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-14T10:28:51.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mechamon_status_data.h",
+              "DocumentMoniker": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_status_data.h",
+              "RelativeDocumentMoniker": "mechamon\\mechamon_status_data.h",
+              "ToolTip": "C:\\Users\\evely\\OneDrive\\Desktop\\DeletionTesting\\prog-fun-assessment2-mechamon\\mechamon\\mechamon\\mechamon_status_data.h",
+              "RelativeToolTip": "mechamon\\mechamon_status_data.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-14T10:28:45.116Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
             }
           ]
         }

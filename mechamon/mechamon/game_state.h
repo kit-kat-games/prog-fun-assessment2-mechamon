@@ -51,6 +51,18 @@ public:
 	string readOpponentName() {
 		return opponent.readName();
 	}
+	inline std::string readCurMechamonName(Operator oper) {
+		return oper.getCurrentMechamonPtr()->readName();
+	}
+	inline std::string readCurMechamonName(Operator* oper) {
+		return oper->getCurrentMechamonPtr()->readName();
+	}
+	inline std::string readCurMechamonType(Operator oper) {
+		return oper.getCurrentMechamonPtr()->readType();
+	}
+	inline std::string readCurMechamonType(Operator* oper) {
+		return oper->getCurrentMechamonPtr()->readType();
+	}
 private:
 	TurnStage turnStage = tSTAGE_OUTOFBATTLE;
 	BattleStage battleStage = bSTAGE_GAMESETUP;
@@ -58,6 +70,7 @@ private:
 	Operator opponent = Operator("NOTSETUP");
 };
 
+<<<<<<< Updated upstream
 
 string readCurMechamonName(Operator oper) {
 	return oper.getCurrentMechamonPtr()->readName();
@@ -74,3 +87,6 @@ string readCurMechamonType(Operator oper) {
 string readCurMechamonType(Operator* oper) {
 	return oper->getCurrentMechamonPtr()->readType();
 }
+=======
+inline GameState* gameStatePtr;
+>>>>>>> Stashed changes
